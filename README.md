@@ -11,7 +11,7 @@
 - Zero dependencies – just vanilla web technologies.
 
 ## Getting Started
-Open `index.html` in a browser to explore the UI. No build step required.
+Open `index.html` in a browser or click start.bat to explore the UI. No build step required.
 
 ## Contributing
 Feel free to fork, add new styles, improve the design system, or submit issues.
