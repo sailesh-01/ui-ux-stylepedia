@@ -1,0 +1,1611 @@
+/* ==========================================================================
+   EXPERIMENTAL & ARTISTIC STYLESHEET
+   1. Brutalism (.style-brutalism)
+   2. Cyberpunk / Neon (.style-cyberpunk)
+   3. Swiss / Editorial (.style-swiss)
+   4. Organic / Biomorphic (.style-organic)
+   ========================================================================== */
+
+/* ==========================================================================
+   FULL-PAGE IMMERSION OVERRIDES (EXPERIMENTAL & ARTISTIC)
+   ========================================================================== */
+body.style-brutalism {
+    --bg-main: #fef08a;
+    --bg-surface: #ffffff;
+    --text-main: #000000;
+    --text-muted: #444444;
+    --border-color: #000000;
+    --accent-color: #ef4444;
+}
+body.style-brutalism .aurora-bg { display: none; }
+
+body.style-cyberpunk {
+    --bg-main: #09090b;
+    --bg-surface: rgba(20, 20, 35, 0.85);
+    --border-color: #06b6d4;
+    --accent-color: #f43f5e;
+}
+
+body.style-swiss {
+    --bg-main: #ffffff;
+    --bg-surface: #ffffff;
+    --text-main: #000000;
+    --text-muted: #666666;
+    --border-color: #000000;
+    --accent-color: #dc2626;
+}
+body.style-swiss .aurora-bg { display: none; }
+
+body.style-organic {
+    --bg-main: #f3f4f6;
+    --bg-surface: #ffffff;
+    --text-main: #1f2937;
+    --text-muted: #78350f;
+    --border-color: #d1d5db;
+    --accent-color: #d97706;
+}
+body.style-organic .aurora-bg { display: none; }
+
+body.style-memphis {
+    --bg-main: #fdf2f8;
+    --bg-surface: #ffffff;
+    --text-main: #111827;
+    --text-muted: #4b5563;
+    --border-color: #ec4899;
+    --accent-color: #eab308;
+}
+body.style-memphis .aurora-bg { display: none; }
+
+body.style-cartoon {
+    --bg-main: #fef9c3;
+    --bg-surface: #ffffff;
+    --text-main: #000000;
+    --text-muted: #444444;
+    --border-color: #000000;
+    --accent-color: #3b82f6;
+}
+body.style-cartoon .aurora-bg { display: none; }
+
+body.style-emoji {
+    --bg-main: #f8fafc;
+    --bg-surface: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --border-color: #cbd5e1;
+    --accent-color: #eab308;
+}
+body.style-emoji .aurora-bg { display: none; }
+
+body.style-isometric {
+    --bg-main: #f1f5f9;
+    --bg-surface: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --accent-color: #6366f1;
+}
+body.style-isometric .aurora-bg { display: none; }
+
+body.style-futuristic {
+    --bg-main: #030712;
+    --bg-surface: #0f172a;
+    --text-main: #f8fafc;
+    --border-color: #06b6d4;
+    --accent-color: #06b6d4;
+}
+
+body.style-retrofuturism {
+    --bg-main: #1e1b4b;
+    --bg-surface: #2e1065;
+    --text-main: #fdf2f8;
+    --border-color: #ec4899;
+    --accent-color: #a855f7;
+}
+
+body.style-skeuofuturism {
+    --bg-main: #0f172a;
+    --bg-surface: #1e293b;
+    --text-main: #f8fafc;
+    --border-color: #38bdf8;
+    --accent-color: #38bdf8;
+}
+
+body.style-dynamic {
+    --bg-main: #111827;
+    --bg-surface: #1f2937;
+    --text-main: #f9fafb;
+    --border-color: #10b981;
+    --accent-color: #10b981;
+}
+
+body.style-immersive3d {
+    --bg-main: #030712;
+    --bg-surface: #111827;
+    --text-main: #f8fafc;
+    --border-color: #6366f1;
+    --accent-color: #6366f1;
+}
+
+body.style-interactivesvg {
+    --bg-main: #0f172a;
+    --bg-surface: #1e293b;
+    --text-main: #f8fafc;
+    --border-color: #a855f7;
+    --accent-color: #a855f7;
+}
+
+body.style-voicegesture {
+    --bg-main: #000000;
+    --bg-surface: #121212;
+    --text-main: #ffffff;
+    --border-color: #38bdf8;
+    --accent-color: #38bdf8;
+}
+
+/* ==========================================================================
+   1. BRUTALISM (.style-brutalism)
+   ========================================================================== */
+.style-brutalism {
+    background-color: #facc15;
+}
+
+.style-brutalism .demo-card {
+    background: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 0px;
+    box-shadow: 10px 10px 0px #000000;
+    color: #000000;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+.style-brutalism .demo-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 12px 12px 0px #000000;
+}
+
+.style-brutalism .card-title {
+    color: #000000;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    border-bottom: 3px solid #000;
+    padding-bottom: 4px;
+    width: 100%;
+}
+
+.style-brutalism .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.style-brutalism .card-badge {
+    background: #ef4444;
+    color: white;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    box-shadow: 3px 3px 0px #000000;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.style-brutalism .card-desc {
+    color: #000000;
+    font-weight: 600;
+}
+
+.style-brutalism .widget-label {
+    color: #000000;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.style-brutalism .demo-btn {
+    background: #000000;
+    color: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 0px;
+    box-shadow: 6px 6px 0px #ef4444;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.style-brutalism .demo-btn:hover {
+    background: #ef4444;
+    color: #000000;
+    box-shadow: 6px 6px 0px #000000;
+}
+.style-brutalism .demo-btn:active {
+    transform: translate(3px, 3px);
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.style-brutalism .toggle-slider {
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 0px;
+    box-shadow: 4px 4px 0px #000000;
+}
+.style-brutalism .toggle-slider:before {
+    background-color: #000000;
+    border-radius: 0px;
+    width: 18px;
+    height: 18px;
+    left: 4px;
+    bottom: 2px;
+}
+.style-brutalism .demo-toggle input:checked + .toggle-slider {
+    background-color: #ef4444;
+}
+.style-brutalism .demo-toggle input:checked + .toggle-slider:before {
+    background-color: #ffffff;
+    border: 2px solid #000;
+}
+
+.style-brutalism .demo-input {
+    background: #ffffff;
+    border: 4px solid #000000;
+    color: #000000;
+    border-radius: 0px;
+    box-shadow: 6px 6px 0px #000000;
+    font-weight: 600;
+}
+.style-brutalism .demo-input:focus {
+    background: #fef08a;
+    box-shadow: 8px 8px 0px #ef4444;
+}
+
+.style-brutalism .demo-slider {
+    background: #000000;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    height: 14px;
+    box-shadow: 4px 4px 0px #ef4444;
+}
+.style-brutalism .demo-slider::-webkit-slider-thumb {
+    background: #ef4444;
+    border: 4px solid #000000;
+    border-radius: 0px;
+    width: 24px;
+    height: 30px;
+}
+
+/* ==========================================================================
+   2. CYBERPUNK / NEON (.style-cyberpunk)
+   ========================================================================== */
+.style-cyberpunk {
+    background: #090914 linear-gradient(0deg, transparent 24%, rgba(6, 182, 212, 0.15) 25%, rgba(6, 182, 212, 0.15) 26%, transparent 27%, transparent 74%, rgba(6, 182, 212, 0.15) 75%, rgba(6, 182, 212, 0.15) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(6, 182, 212, 0.15) 25%, rgba(6, 182, 212, 0.15) 26%, transparent 27%, transparent 74%, rgba(6, 182, 212, 0.15) 75%, rgba(6, 182, 212, 0.15) 76%, transparent 77%, transparent);
+    background-size: 40px 40px;
+    position: relative;
+}
+
+.style-cyberpunk .demo-card {
+    background: #0d0f26;
+    border: 2px solid #06b6d4;
+    border-radius: 0px;
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.4), inset 0 0 15px rgba(6, 182, 212, 0.2);
+    clip-path: polygon(0 0, calc(100% - 25px) 0, 100% 25px, 100% 100%, 25px 100%, 0 calc(100% - 25px));
+    color: #ffffff;
+}
+
+.style-cyberpunk .card-title {
+    color: #06b6d4;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(6, 182, 212, 0.6);
+}
+
+.style-cyberpunk .card-badge {
+    background: #fcee09;
+    color: #000000;
+    border-radius: 0px;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    box-shadow: 0 0 10px #fcee09;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 6px) 100%, 0 100%);
+}
+
+.style-cyberpunk .card-desc {
+    color: #a5f3fc;
+}
+
+.style-cyberpunk .widget-label {
+    color: #06b6d4;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+}
+
+.style-cyberpunk .demo-btn {
+    background: #fcee09;
+    color: #000000;
+    border-radius: 0px;
+    border: none;
+    clip-path: polygon(15px 0%, 100% 0%, calc(100% - 15px) 100%, 0% 100%);
+    box-shadow: 0 0 15px rgba(252, 238, 9, 0.6);
+    font-weight: 800;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.style-cyberpunk .demo-btn:hover {
+    background: #ec4899;
+    color: white;
+    box-shadow: 0 0 25px rgba(236, 72, 153, 0.8);
+}
+.style-cyberpunk .demo-btn:active {
+    transform: scale(0.96);
+}
+
+.style-cyberpunk .toggle-slider {
+    background-color: #1e1b4b;
+    border: 2px solid #06b6d4;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.5);
+}
+.style-cyberpunk .toggle-slider:before {
+    background-color: #06b6d4;
+    border-radius: 0px;
+    box-shadow: 0 0 8px #06b6d4;
+}
+.style-cyberpunk .demo-toggle input:checked + .toggle-slider {
+    background-color: #ec4899;
+    border-color: #fcee09;
+    box-shadow: 0 0 15px #ec4899;
+}
+.style-cyberpunk .demo-toggle input:checked + .toggle-slider:before {
+    background-color: #fcee09;
+    box-shadow: 0 0 10px #fcee09;
+}
+
+.style-cyberpunk .demo-input {
+    background: #030712;
+    border: 2px solid #06b6d4;
+    color: #fcee09;
+    border-radius: 0px;
+    font-family: var(--font-mono);
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.3);
+}
+.style-cyberpunk .demo-input:focus {
+    border-color: #ec4899;
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.6);
+}
+
+.style-cyberpunk .demo-slider {
+    background: #1e1b4b;
+    border: 1px solid #06b6d4;
+    border-radius: 0px;
+    box-shadow: 0 0 8px rgba(6, 182, 212, 0.4);
+}
+.style-cyberpunk .demo-slider::-webkit-slider-thumb {
+    background: #fcee09;
+    border-radius: 0px;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 12px #fcee09;
+    transform: rotate(45deg);
+}
+
+/* ==========================================================================
+   3. SWISS / EDITORIAL (.style-swiss)
+   ========================================================================== */
+.style-swiss {
+    background-color: #f8fafc;
+}
+
+.style-swiss .demo-card {
+    background: #ffffff;
+    border: none;
+    border-top: 8px solid #b91c1c;
+    border-bottom: 2px solid #000000;
+    border-radius: 0px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+    color: #000000;
+    padding: 48px 40px;
+}
+
+.style-swiss .card-title {
+    color: #000000;
+    font-weight: 800;
+    font-size: 28px;
+    letter-spacing: -1px;
+}
+
+.style-swiss .card-badge {
+    background: #b91c1c;
+    color: white;
+    border-radius: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 6px 14px;
+}
+
+.style-swiss .card-desc {
+    color: #334155;
+    font-size: 16px;
+    line-height: 1.6;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 24px;
+}
+
+.style-swiss .widget-label {
+    color: #000000;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+}
+
+.style-swiss .demo-btn {
+    background: #b91c1c;
+    color: white;
+    border-radius: 0px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: -0.3px;
+}
+.style-swiss .demo-btn:hover {
+    background: #000000;
+}
+
+.style-swiss .toggle-slider {
+    background-color: #e2e8f0;
+    border-radius: 0px;
+}
+.style-swiss .toggle-slider:before {
+    background-color: #000000;
+    border-radius: 0px;
+}
+.style-swiss .demo-toggle input:checked + .toggle-slider {
+    background-color: #b91c1c;
+}
+
+.style-swiss .demo-input {
+    background: #ffffff;
+    border: 2px solid #000000;
+    color: #000000;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.style-swiss .demo-input:focus {
+    border-color: #b91c1c;
+}
+
+.style-swiss .demo-slider {
+    background: #e2e8f0;
+    border-radius: 0px;
+    height: 4px;
+}
+.style-swiss .demo-slider::-webkit-slider-thumb {
+    background: #b91c1c;
+    border-radius: 0px;
+    width: 18px;
+    height: 18px;
+}
+
+/* ==========================================================================
+   4. ORGANIC / BIOMORPHIC (.style-organic)
+   ========================================================================== */
+.style-organic {
+    background-color: #e7e5e4;
+}
+
+.style-organic .demo-card {
+    background: #f5f5f4;
+    border: none;
+    border-radius: 50% 30% 60% 40% / 40% 50% 30% 60%;
+    box-shadow: 10px 15px 40px rgba(120, 113, 108, 0.25);
+    color: #292524;
+    padding: 56px 48px;
+    transition: border-radius 0.5s ease;
+}
+.style-organic .demo-card:hover {
+    border-radius: 40% 60% 40% 50% / 50% 40% 60% 30%;
+}
+
+.style-organic .card-title {
+    color: #292524;
+    font-weight: 700;
+}
+
+.style-organic .card-badge {
+    background: #3f6212;
+    color: white;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    padding: 6px 16px;
+    box-shadow: 0 4px 10px rgba(63, 98, 18, 0.2);
+}
+
+.style-organic .card-desc {
+    color: #57534e;
+}
+
+.style-organic .widget-label {
+    color: #57534e;
+}
+
+.style-organic .demo-btn {
+    background: #78350f;
+    color: white;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 6px 15px rgba(120, 53, 15, 0.3);
+    transition: all 0.3s ease;
+}
+.style-organic .demo-btn:hover {
+    background: #3f6212;
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+    box-shadow: 0 8px 20px rgba(63, 98, 18, 0.4);
+}
+
+.style-organic .toggle-slider {
+    background-color: #d6d3d1;
+    border-radius: 40% 60% 60% 40% / 50% 50% 50% 50%;
+}
+.style-organic .toggle-slider:before {
+    background-color: #fafaf9;
+    border-radius: 50% 40% 40% 50% / 40% 50% 50% 60%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+.style-organic .demo-toggle input:checked + .toggle-slider {
+    background-color: #3f6212;
+}
+
+.style-organic .demo-input {
+    background: #fafaf9;
+    border: 1px solid #d6d3d1;
+    color: #292524;
+    border-radius: 30% 70% 50% 50% / 40% 40% 60% 60%;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+.style-organic .demo-input:focus {
+    border-color: #78350f;
+    background: #ffffff;
+}
+
+.style-organic .demo-slider {
+    background: #d6d3d1;
+    border-radius: 20px;
+}
+.style-organic .demo-slider::-webkit-slider-thumb {
+    background: #c27d58;
+    box-shadow: 0 2px 6px rgba(194, 125, 88, 0.4);
+    border-radius: 60% 40% 50% 50% / 50% 50% 50% 50%;
+}
+
+/* ==========================================================================
+   5. MEMPHIS DESIGN (.style-memphis)
+   ========================================================================== */
+.style-memphis {
+    background-color: #ffeb3b;
+    background-image: radial-gradient(#000 15%, transparent 16%), radial-gradient(#000 15%, transparent 16%);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 20px;
+}
+
+.style-memphis .demo-card {
+    background: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 0px;
+    box-shadow: 12px 12px 0px #e91e63;
+    color: #000000;
+}
+
+.style-memphis .card-title {
+    color: #000000;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.style-memphis .card-badge {
+    background: #00bcd4;
+    color: #000000;
+    border: 3px solid #000000;
+    border-radius: 0px;
+    font-weight: 800;
+    box-shadow: 4px 4px 0px #000000;
+}
+
+.style-memphis .card-desc {
+    color: #000000;
+    font-weight: 700;
+}
+
+.style-memphis .widget-label {
+    color: #000000;
+    font-weight: 700;
+}
+
+.style-memphis .demo-btn {
+    background: #e91e63;
+    color: white;
+    border: 4px solid #000000;
+    border-radius: 0px;
+    font-weight: 900;
+    box-shadow: 8px 8px 0px #000000;
+    transition: all 0.15s ease;
+}
+.style-memphis .demo-btn:hover {
+    background: #00bcd4;
+    color: #000000;
+    box-shadow: 4px 4px 0px #000000;
+    transform: translate(4px, 4px);
+}
+.style-memphis .demo-btn:active {
+    transform: translate(6px, 6px);
+    box-shadow: 2px 2px 0px #000000;
+}
+
+.style-memphis .toggle-slider {
+    background: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 0px;
+    box-shadow: 4px 4px 0px #000000;
+}
+.style-memphis .toggle-slider:before {
+    background: #e91e63;
+    border: 3px solid #000;
+    border-radius: 0;
+}
+.style-memphis .demo-toggle input:checked + .toggle-slider {
+    background: #00bcd4;
+}
+.style-memphis .demo-toggle input:checked + .toggle-slider:before {
+    background: #ffeb3b;
+}
+
+.style-memphis .demo-input {
+    background: #ffffff;
+    border: 4px solid #000000;
+    color: #000000;
+    border-radius: 0px;
+    box-shadow: 6px 6px 0px #00bcd4;
+    font-weight: 700;
+}
+.style-memphis .demo-input:focus {
+    box-shadow: 6px 6px 0px #e91e63;
+}
+
+.style-memphis .demo-slider {
+    background: #ffffff;
+    border: 4px solid #000000;
+    height: 16px;
+    border-radius: 0px;
+    box-shadow: 4px 4px 0px #000;
+}
+.style-memphis .demo-slider::-webkit-slider-thumb {
+    background: #e91e63;
+    border: 4px solid #000000;
+    border-radius: 0px;
+    width: 24px;
+    height: 28px;
+}
+
+/* ==========================================================================
+   6. CARTOON / COMIC (.style-cartoon)
+   ========================================================================== */
+.style-cartoon {
+    background-color: #4a90e2;
+}
+
+.style-cartoon .demo-card {
+    background: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 24px;
+    box-shadow: 8px 12px 0px #000000;
+    color: #000000;
+}
+
+.style-cartoon .card-title {
+    color: #000000;
+    font-weight: 900;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', var(--font-heading);
+}
+
+.style-cartoon .card-badge {
+    background: #ffeb3b;
+    color: #000000;
+    border: 3px solid #000000;
+    border-radius: 12px;
+    font-weight: 800;
+    box-shadow: 3px 3px 0px #000000;
+}
+
+.style-cartoon .card-desc {
+    color: #222222;
+    font-family: 'Comic Sans MS', var(--font-sans);
+    font-weight: 600;
+}
+
+.style-cartoon .widget-label {
+    color: #222222;
+    font-family: 'Comic Sans MS', var(--font-sans);
+    font-weight: 600;
+}
+
+.style-cartoon .demo-btn {
+    background: #ff5722;
+    color: white;
+    border: 4px solid #000000;
+    border-radius: 16px;
+    font-weight: 900;
+    box-shadow: 6px 6px 0px #000000;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+.style-cartoon .demo-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 6px 8px 0px #000000;
+    background: #ff7043;
+}
+.style-cartoon .demo-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000000;
+}
+
+.style-cartoon .toggle-slider {
+    background: #e0e0e0;
+    border: 4px solid #000000;
+    border-radius: 30px;
+    box-shadow: 3px 3px 0px #000000;
+}
+.style-cartoon .toggle-slider:before {
+    background: #ffffff;
+    border: 3px solid #000000;
+}
+.style-cartoon .demo-toggle input:checked + .toggle-slider {
+    background: #8bc34a;
+}
+
+.style-cartoon .demo-input {
+    background: #ffffff;
+    border: 4px solid #000000;
+    color: #000000;
+    border-radius: 16px;
+    box-shadow: 4px 4px 0px #000000;
+    font-weight: 600;
+}
+.style-cartoon .demo-input:focus {
+    background: #fff9c4;
+}
+
+.style-cartoon .demo-slider {
+    background: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 10px;
+    height: 16px;
+    box-shadow: 3px 3px 0px #000000;
+}
+.style-cartoon .demo-slider::-webkit-slider-thumb {
+    background: #ff5722;
+    border: 4px solid #000000;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+}
+
+/* ==========================================================================
+   7. EMOJI UI (.style-emoji)
+   ========================================================================== */
+.style-emoji {
+    background-color: #f3e5f5;
+}
+
+.style-emoji .demo-card {
+    background: #ffffff;
+    border: 3px solid #ab47bc;
+    border-radius: 28px;
+    box-shadow: 0 10px 30px rgba(171,71,188,0.2);
+    color: #4a148c;
+}
+
+.style-emoji .card-title {
+    color: #4a148c;
+    font-weight: 800;
+}
+
+.style-emoji .card-badge {
+    background: #e1bee7;
+    color: #6a1b29;
+    border: none;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 6px 14px;
+    box-shadow: none;
+}
+
+.style-emoji .card-desc {
+    color: #6a1b29;
+    font-weight: 600;
+}
+
+.style-emoji .widget-label {
+    color: #6a1b29;
+    font-weight: 600;
+}
+
+.style-emoji .demo-btn {
+    background: #ab47bc;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 16px;
+    box-shadow: 0 6px 20px rgba(171,71,188,0.4);
+    transition: all 0.2s ease;
+}
+.style-emoji .demo-btn:hover {
+    background: #ba68c8;
+    transform: scale(1.05);
+}
+.style-emoji .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-emoji .toggle-slider {
+    background: #e1bee7;
+    border-radius: 30px;
+}
+.style-emoji .toggle-slider:before {
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.style-emoji .demo-toggle input:checked + .toggle-slider {
+    background: #ab47bc;
+}
+
+.style-emoji .demo-input {
+    background: #fdfbf7;
+    border: 2px solid #ce93d8;
+    color: #4a148c;
+    border-radius: 18px;
+    font-weight: 600;
+}
+.style-emoji .demo-input:focus {
+    border-color: #ab47bc;
+    box-shadow: 0 0 15px rgba(171,71,188,0.3);
+}
+
+.style-emoji .demo-slider {
+    background: #e1bee7;
+    height: 12px;
+    border-radius: 10px;
+}
+.style-emoji .demo-slider::-webkit-slider-thumb {
+    background: #ab47bc;
+    box-shadow: 0 2px 8px rgba(171,71,188,0.5);
+    width: 24px;
+    height: 24px;
+}
+
+/* ==========================================================================
+   8. ISOMETRIC UI (.style-isometric)
+   ========================================================================== */
+.style-isometric {
+    background-color: #263238;
+}
+
+.style-isometric .demo-card {
+    background: #37474f;
+    border: 1px solid #546e7a;
+    border-radius: 16px;
+    box-shadow: 20px 20px 0px rgba(0,0,0,0.3);
+    transform: perspective(1000px) rotateX(5deg) rotateY(-5deg);
+    transition: all 0.3s ease;
+    color: #eceff1;
+}
+
+.style-isometric .card-title {
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.style-isometric .card-badge {
+    background: #009688;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+}
+
+.style-isometric .card-desc {
+    color: #b0bec5;
+}
+
+.style-isometric .widget-label {
+    color: #b0bec5;
+}
+
+.style-isometric .demo-btn {
+    background: #009688;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 6px 6px 0px #004d40;
+    transition: all 0.15s ease;
+}
+.style-isometric .demo-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px #004d40;
+}
+.style-isometric .demo-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 2px 2px 0px #004d40;
+}
+
+.style-isometric .toggle-slider {
+    background: #546e7a;
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+.style-isometric .toggle-slider:before {
+    background: #ffffff;
+    border-radius: 8px;
+}
+.style-isometric .demo-toggle input:checked + .toggle-slider {
+    background: #009688;
+}
+
+.style-isometric .demo-input {
+    background: #263238;
+    border: 1px solid #546e7a;
+    color: white;
+    border-radius: 10px;
+    box-shadow: inset 4px 4px 0px rgba(0,0,0,0.2);
+}
+.style-isometric .demo-input:focus {
+    border-color: #009688;
+}
+
+.style-isometric .demo-slider {
+    background: #546e7a;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+    height: 12px;
+    border-radius: 6px;
+}
+.style-isometric .demo-slider::-webkit-slider-thumb {
+    background: #009688;
+    border-radius: 6px;
+    box-shadow: 4px 4px 0px #004d40;
+    width: 20px;
+    height: 24px;
+}
+
+/* ==========================================================================
+   9. FUTURISTIC UI (.style-futuristic)
+   ========================================================================== */
+.style-futuristic {
+    background-color: #030712;
+}
+
+.style-futuristic .demo-card {
+    background: rgba(17, 24, 39, 0.8);
+    backdrop-filter: blur(16px);
+    border: 1px solid #06b6d4;
+    border-radius: 0px;
+    box-shadow: 0 0 30px rgba(6,182,212,0.3), inset 0 0 15px rgba(6,182,212,0.2);
+    color: #ecfeff;
+    clip-path: polygon(0 0, calc(100% - 30px) 0, 100% 30px, 100% 100%, 30px 100%, 0 calc(100% - 30px));
+}
+
+.style-futuristic .card-title {
+    color: #06b6d4;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(6,182,212,0.5);
+}
+
+.style-futuristic .card-badge {
+    background: transparent;
+    color: #06b6d4;
+    border: 1px solid #06b6d4;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(6,182,212,0.4);
+    letter-spacing: 1px;
+}
+
+.style-futuristic .card-desc {
+    color: #a5f3fc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.style-futuristic .widget-label {
+    color: #a5f3fc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.style-futuristic .demo-btn {
+    background: transparent;
+    color: #06b6d4;
+    border: 2px solid #06b6d4;
+    border-radius: 0px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(6,182,212,0.4), inset 0 0 10px rgba(6,182,212,0.4);
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 15px, 100% 100%, 15px 100%, 0 calc(100% - 15px));
+    transition: all 0.2s ease;
+}
+.style-futuristic .demo-btn:hover {
+    background: #06b6d4;
+    color: #030712;
+    box-shadow: 0 0 30px rgba(6,182,212,0.8);
+}
+.style-futuristic .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-futuristic .toggle-slider {
+    background: #1f2937;
+    border: 1px solid #06b6d4;
+    border-radius: 0px;
+}
+.style-futuristic .toggle-slider:before {
+    background: #06b6d4;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(6,182,212,0.6);
+}
+.style-futuristic .demo-toggle input:checked + .toggle-slider {
+    background: rgba(6,182,212,0.3);
+}
+
+.style-futuristic .demo-input {
+    background: #030712;
+    border: 1px solid #06b6d4;
+    color: #06b6d4;
+    border-radius: 0px;
+    box-shadow: inset 0 0 10px rgba(6,182,212,0.3);
+}
+.style-futuristic .demo-input:focus {
+    box-shadow: inset 0 0 20px rgba(6,182,212,0.6), 0 0 15px rgba(6,182,212,0.5);
+}
+
+.style-futuristic .demo-slider {
+    background: #1f2937;
+    border: 1px solid #06b6d4;
+    border-radius: 0px;
+    height: 10px;
+}
+.style-futuristic .demo-slider::-webkit-slider-thumb {
+    background: #06b6d4;
+    border-radius: 0px;
+    box-shadow: 0 0 15px rgba(6,182,212,0.8);
+    width: 18px;
+    height: 24px;
+}
+
+/* ==========================================================================
+   10. RETROFUTURISM (.style-retrofuturism)
+   ========================================================================== */
+.style-retrofuturism {
+    background-color: #2e1065;
+}
+
+.style-retrofuturism .demo-card {
+    background: linear-gradient(180deg, #3b0764 0%, #1e1b4b 100%);
+    border: 2px solid #f43f5e;
+    border-radius: 16px;
+    box-shadow: 0 0 25px rgba(244,63,94,0.5);
+    color: #ffe4e6;
+}
+
+.style-retrofuturism .card-title {
+    color: #f43f5e;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(244,63,94,0.6);
+}
+
+.style-retrofuturism .card-badge {
+    background: #f43f5e;
+    color: #2e1065;
+    border: none;
+    border-radius: 4px;
+    font-weight: 800;
+    box-shadow: 0 0 10px #f43f5e;
+}
+
+.style-retrofuturism .card-desc {
+    color: #fda4af;
+}
+
+.style-retrofuturism .widget-label {
+    color: #fda4af;
+}
+
+.style-retrofuturism .demo-btn {
+    background: linear-gradient(135deg, #f43f5e 0%, #fb7185 100%);
+    color: #1e1b4b;
+    border: none;
+    border-radius: 8px;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 20px rgba(244,63,94,0.6);
+}
+.style-retrofuturism .demo-btn:hover {
+    background: linear-gradient(135deg, #fb7185 0%, #f43f5e 100%);
+    box-shadow: 0 8px 25px rgba(244,63,94,0.8);
+}
+.style-retrofuturism .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-retrofuturism .toggle-slider {
+    background: #4c1d95;
+    border: 1px solid #f43f5e;
+}
+.style-retrofuturism .toggle-slider:before {
+    background: #f43f5e;
+    box-shadow: 0 0 10px #f43f5e;
+}
+.style-retrofuturism .demo-toggle input:checked + .toggle-slider {
+    background: #f43f5e;
+}
+.style-retrofuturism .demo-toggle input:checked + .toggle-slider:before {
+    background: #ffe4e6;
+}
+
+.style-retrofuturism .demo-input {
+    background: #1e1b4b;
+    border: 2px solid #f43f5e;
+    color: #ffe4e6;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(244,63,94,0.3);
+}
+.style-retrofuturism .demo-input:focus {
+    box-shadow: inset 0 0 15px rgba(244,63,94,0.5), 0 0 15px rgba(244,63,94,0.6);
+}
+
+.style-retrofuturism .demo-slider {
+    background: #4c1d95;
+    border: 1px solid #f43f5e;
+}
+.style-retrofuturism .demo-slider::-webkit-slider-thumb {
+    background: #f43f5e;
+    box-shadow: 0 0 15px #f43f5e;
+}
+
+/* ==========================================================================
+   11. SKEUOFUTURISM (.style-skeuofuturism)
+   ========================================================================== */
+.style-skeuofuturism {
+    background-color: #0f172a;
+}
+
+.style-skeuofuturism .demo-card {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border: 1px solid #64748b;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8), inset 0 2px 4px rgba(255,255,255,0.2);
+    color: #f8fafc;
+}
+
+.style-skeuofuturism .card-title {
+    color: #38bdf8;
+    font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.style-skeuofuturism .card-badge {
+    background: linear-gradient(180deg, #0284c7, #0369a1);
+    color: white;
+    border: 1px solid #38bdf8;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(2,132,199,0.5), inset 0 1px 1px rgba(255,255,255,0.4);
+}
+
+.style-skeuofuturism .card-desc {
+    color: #94a3b8;
+}
+
+.style-skeuofuturism .widget-label {
+    color: #94a3b8;
+}
+
+.style-skeuofuturism .demo-btn {
+    background: linear-gradient(180deg, #0284c7, #0369a1);
+    border: 1px solid #38bdf8;
+    border-radius: 16px;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5), inset 0 1px 2px rgba(255,255,255,0.5);
+}
+.style-skeuofuturism .demo-btn:hover {
+    background: linear-gradient(180deg, #0369a1, #0284c7);
+}
+.style-skeuofuturism .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-skeuofuturism .toggle-slider {
+    background: #1e293b;
+    border: 1px solid #475569;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.6);
+}
+.style-skeuofuturism .toggle-slider:before {
+    background: linear-gradient(180deg, #ffffff, #cbd5e1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px 1px white;
+}
+.style-skeuofuturism .demo-toggle input:checked + .toggle-slider {
+    background: linear-gradient(180deg, #0284c7, #0369a1);
+}
+
+.style-skeuofuturism .demo-input {
+    background: #0b0f19;
+    border: 1px solid #475569;
+    color: white;
+    border-radius: 12px;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.5);
+}
+.style-skeuofuturism .demo-input:focus {
+    border-color: #38bdf8;
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.5), 0 0 12px rgba(56,189,248,0.5);
+}
+
+.style-skeuofuturism .demo-slider {
+    background: #1e293b;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
+}
+.style-skeuofuturism .demo-slider::-webkit-slider-thumb {
+    background: linear-gradient(180deg, #ffffff, #cbd5e1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px 1px white;
+}
+
+/* ==========================================================================
+   12. DYNAMIC UI (.style-dynamic)
+   ========================================================================== */
+.style-dynamic {
+    background-color: #111827;
+}
+
+@keyframes pulseBadge {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.style-dynamic .demo-card {
+    background: #1f2937;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    color: white;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.style-dynamic .demo-card:hover {
+    transform: scale(1.02);
+    border-color: #8b5cf6;
+    box-shadow: 0 20px 40px rgba(139,92,246,0.4);
+}
+
+.style-dynamic .card-title {
+    color: white;
+    font-weight: 800;
+}
+
+.style-dynamic .card-badge {
+    background: #8b5cf6;
+    color: white;
+    border-radius: 8px;
+    animation: pulseBadge 2s infinite;
+}
+
+.style-dynamic .card-desc {
+    color: #d1d5db;
+}
+
+.style-dynamic .widget-label {
+    color: #d1d5db;
+}
+
+.style-dynamic .demo-btn {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(139,92,246,0.4);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.style-dynamic .demo-btn:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(139,92,246,0.6);
+    background: #a78bfa;
+}
+.style-dynamic .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-dynamic .toggle-slider {
+    background: #374151;
+}
+.style-dynamic .demo-toggle input:checked + .toggle-slider {
+    background: #8b5cf6;
+    box-shadow: 0 0 15px rgba(139,92,246,0.5);
+}
+
+.style-dynamic .demo-input {
+    background: #111827;
+    border: 1px solid #4b5563;
+    color: white;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+.style-dynamic .demo-input:focus {
+    border-color: #8b5cf6;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(139,92,246,0.3);
+}
+
+.style-dynamic .demo-slider {
+    background: #374151;
+}
+.style-dynamic .demo-slider::-webkit-slider-thumb {
+    background: #8b5cf6;
+    box-shadow: 0 0 10px rgba(139,92,246,0.5);
+}
+
+/* ==========================================================================
+   13. IMMERSIVE 3D (.style-immersive3d)
+   ========================================================================== */
+.style-immersive3d {
+    background-color: #1e293b;
+}
+
+.style-immersive3d .demo-card {
+    background: #334155;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6), inset 0 2px 4px rgba(255,255,255,0.2);
+    transform: perspective(1000px) rotateX(2deg);
+    color: white;
+}
+
+.style-immersive3d .card-title {
+    color: white;
+    font-weight: 800;
+    text-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.style-immersive3d .card-badge {
+    background: #6366f1;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(99,102,241,0.4);
+}
+
+.style-immersive3d .card-desc {
+    color: #cbd5e1;
+}
+
+.style-immersive3d .widget-label {
+    color: #cbd5e1;
+}
+
+.style-immersive3d .demo-btn {
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-weight: 800;
+    box-shadow: 0 12px 24px rgba(99,102,241,0.5), inset 0 2px 4px rgba(255,255,255,0.3);
+    transition: all 0.2s ease;
+}
+.style-immersive3d .demo-btn:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 16px 32px rgba(99,102,241,0.7);
+}
+.style-immersive3d .demo-btn:active {
+    transform: translateY(2px) scale(0.98);
+    box-shadow: 0 4px 8px rgba(99,102,241,0.4);
+}
+
+.style-immersive3d .toggle-slider {
+    background: #475569;
+    box-shadow: inset 0 4px 8px rgba(0,0,0,0.4);
+}
+.style-immersive3d .toggle-slider:before {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+.style-immersive3d .demo-toggle input:checked + .toggle-slider {
+    background: #6366f1;
+    box-shadow: inset 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.style-immersive3d .demo-input {
+    background: #1e293b;
+    border: none;
+    color: white;
+    border-radius: 16px;
+    box-shadow: inset 0 4px 12px rgba(0,0,0,0.5);
+}
+.style-immersive3d .demo-input:focus {
+    box-shadow: inset 0 4px 12px rgba(0,0,0,0.5), 0 0 15px rgba(99,102,241,0.5);
+}
+
+.style-immersive3d .demo-slider {
+    background: #475569;
+    box-shadow: inset 0 4px 8px rgba(0,0,0,0.4);
+}
+.style-immersive3d .demo-slider::-webkit-slider-thumb {
+    background: #6366f1;
+    box-shadow: 0 6px 12px rgba(99,102,241,0.5);
+}
+
+/* ==========================================================================
+   14. INTERACTIVE SVG (.style-interactivesvg)
+   ========================================================================== */
+.style-interactivesvg {
+    background-color: #18181b;
+}
+
+.style-interactivesvg .demo-card {
+    background: #27272a;
+    border: 2px dashed #10b981;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    color: white;
+}
+
+.style-interactivesvg .card-title {
+    color: #10b981;
+    font-weight: 800;
+}
+
+.style-interactivesvg .card-badge {
+    background: #10b981;
+    color: #18181b;
+    border-radius: 6px;
+    font-weight: 800;
+    box-shadow: none;
+}
+
+.style-interactivesvg .card-desc {
+    color: #a1a1aa;
+}
+
+.style-interactivesvg .widget-label {
+    color: #a1a1aa;
+}
+
+.style-interactivesvg .demo-btn {
+    background: #10b981;
+    color: #18181b;
+    border: none;
+    border-radius: 12px;
+    font-weight: 800;
+    box-shadow: 0 6px 20px rgba(16,185,129,0.3);
+    transition: all 0.2s ease;
+}
+.style-interactivesvg .demo-btn:hover {
+    background: #34d399;
+    transform: scale(1.04);
+}
+.style-interactivesvg .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-interactivesvg .toggle-slider {
+    background: #3f3f46;
+    border: 2px solid #10b981;
+}
+.style-interactivesvg .toggle-slider:before {
+    background: #10b981;
+}
+.style-interactivesvg .demo-toggle input:checked + .toggle-slider {
+    background: #10b981;
+}
+.style-interactivesvg .demo-toggle input:checked + .toggle-slider:before {
+    background: #18181b;
+}
+
+.style-interactivesvg .demo-input {
+    background: #18181b;
+    border: 2px solid #3f3f46;
+    color: white;
+    border-radius: 12px;
+}
+.style-interactivesvg .demo-input:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 15px rgba(16,185,129,0.3);
+}
+
+.style-interactivesvg .demo-slider {
+    background: #3f3f46;
+    border: 1px solid #10b981;
+}
+.style-interactivesvg .demo-slider::-webkit-slider-thumb {
+    background: #10b981;
+    box-shadow: 0 0 15px rgba(16,185,129,0.5);
+}
+
+/* ==========================================================================
+   15. VOICE & GESTURE (.style-voicegesture)
+   ========================================================================== */
+.style-voicegesture {
+    background-color: #0f172a;
+}
+
+.style-voicegesture .demo-card {
+    background: #1e293b;
+    border: 2px solid #8b5cf6;
+    border-radius: 32px;
+    box-shadow: 0 15px 40px rgba(139,92,246,0.3);
+    color: white;
+    position: relative;
+}
+
+.style-voicegesture .card-title {
+    color: #c4b5fd;
+    font-weight: 800;
+}
+
+.style-voicegesture .card-badge {
+    background: #8b5cf6;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(139,92,246,0.5);
+}
+
+.style-voicegesture .card-desc {
+    color: #94a3b8;
+}
+
+.style-voicegesture .widget-label {
+    color: #94a3b8;
+}
+
+.style-voicegesture .demo-btn {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    font-weight: 700;
+    box-shadow: 0 8px 25px rgba(139,92,246,0.5);
+    transition: all 0.3s ease;
+}
+.style-voicegesture .demo-btn:hover {
+    box-shadow: 0 0 30px rgba(139,92,246,0.8);
+    transform: scale(1.05);
+    background: #a78bfa;
+}
+.style-voicegesture .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-voicegesture .toggle-slider {
+    background: #334155;
+    border-radius: 30px;
+}
+.style-voicegesture .demo-toggle input:checked + .toggle-slider {
+    background: #8b5cf6;
+    box-shadow: 0 0 20px rgba(139,92,246,0.6);
+}
+
+.style-voicegesture .demo-input {
+    background: #0f172a;
+    border: 2px solid #475569;
+    color: white;
+    border-radius: 20px;
+}
+.style-voicegesture .demo-input:focus {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 25px rgba(139,92,246,0.5);
+}
+
+.style-voicegesture .demo-slider {
+    background: #334155;
+    border-radius: 10px;
+}
+.style-voicegesture .demo-slider::-webkit-slider-thumb {
+    background: #8b5cf6;
+    box-shadow: 0 0 20px rgba(139,92,246,0.7);
+}

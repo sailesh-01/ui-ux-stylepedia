@@ -1,0 +1,1280 @@
+/* ==========================================================================
+   MODERN & POPULAR STYLESHEET
+   1. Glassmorphism (.style-glassmorphism)
+   2. Neumorphism (.style-neumorphism)
+   3. Claymorphism (.style-claymorphism)
+   4. Dark Mode (.style-darkmode)
+   5. Apple HIG (.style-apple)
+   6. Aurora / Cosmic (.style-aurora)
+   7. Liquid Glass (.style-liquidglass)
+   ========================================================================== */
+
+/* ==========================================================================
+   FULL-PAGE IMMERSION OVERRIDES (MODERN & POPULAR)
+   ========================================================================== */
+body.style-glassmorphism {
+    --bg-main: #0f172a;
+    --bg-surface: rgba(15, 23, 42, 0.6);
+    --border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.style-neumorphism {
+    --bg-main: #e0e5ec;
+    --bg-surface: #e0e5ec;
+    --text-main: #2d3748;
+    --text-muted: #718096;
+    --border-color: rgba(255, 255, 255, 0.5);
+    --accent-color: #3182ce;
+}
+body.style-neumorphism .aurora-bg { display: none; }
+
+body.style-claymorphism {
+    --bg-main: #e2e8f0;
+    --bg-surface: #f1f5f9;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --border-color: #ffffff;
+    --accent-color: #f59e0b;
+}
+body.style-claymorphism .aurora-bg { display: none; }
+
+body.style-darkmode {
+    --bg-main: #000000;
+    --bg-surface: #121212;
+    --text-main: #ffffff;
+    --border-color: #222222;
+    --accent-color: #00ff66;
+}
+body.style-darkmode .aurora-bg { display: none; }
+
+body.style-apple {
+    --bg-main: #000000;
+    --bg-surface: #1c1c1e;
+    --text-main: #ffffff;
+    --border-color: #38383a;
+    --accent-color: #007aff;
+}
+body.style-apple .aurora-bg { display: none; }
+
+body.style-aurora {
+    --bg-main: #030712;
+    --bg-surface: rgba(17, 24, 39, 0.7);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --accent-color: #ec4899;
+}
+
+body.style-liquidglass {
+    --bg-main: #080c1e;
+    --bg-surface: rgba(13, 20, 48, 0.65);
+    --border-color: rgba(6, 182, 212, 0.3);
+    --accent-color: #06b6d4;
+}
+
+body.style-frosted {
+    --bg-main: #0f172a;
+    --bg-surface: rgba(255, 255, 255, 0.03);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --accent-color: #38bdf8;
+}
+
+body.style-gradient {
+    --bg-main: #1e1b4b;
+    --bg-surface: #312e81;
+    --text-main: #ffffff;
+    --border-color: #4338ca;
+    --accent-color: #a855f7;
+}
+body.style-gradient .aurora-bg { display: none; }
+
+body.style-morphing {
+    --bg-main: #111827;
+    --bg-surface: #1f2937;
+    --text-main: #f9fafb;
+    --border-color: #374151;
+    --accent-color: #10b981;
+}
+body.style-morphing .aurora-bg { display: none; }
+
+body.style-minimaldark {
+    --bg-main: #000000;
+    --bg-surface: #000000;
+    --text-main: #ffffff;
+    --border-color: #27272a;
+    --accent-color: #ffffff;
+}
+body.style-minimaldark .aurora-bg { display: none; }
+
+body.style-luxury {
+    --bg-main: #0c0a09;
+    --bg-surface: #1c1917;
+    --text-main: #f5efe6;
+    --border-color: #d4af37;
+    --accent-color: #d4af37;
+}
+body.style-luxury .aurora-bg { display: none; }
+
+/* ==========================================================================
+   1. GLASSMORPHISM (.style-glassmorphism)
+   ========================================================================== */
+.style-glassmorphism {
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+    position: relative;
+}
+
+.style-glassmorphism .demo-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: white;
+}
+
+.style-glassmorphism .card-title {
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.style-glassmorphism .card-badge {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.style-glassmorphism .card-desc {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.style-glassmorphism .widget-label {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.style-glassmorphism .demo-btn {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    color: white;
+    border-radius: 12px;
+}
+.style-glassmorphism .demo-btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+.style-glassmorphism .demo-btn:active {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.style-glassmorphism .toggle-slider {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+}
+.style-glassmorphism .toggle-slider:before {
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.style-glassmorphism .demo-toggle input:checked + .toggle-slider {
+    background-color: rgba(255, 255, 255, 0.45);
+    border-color: white;
+}
+
+.style-glassmorphism .demo-input {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    color: white;
+    border-radius: 12px;
+}
+.style-glassmorphism .demo-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+.style-glassmorphism .demo-input:focus {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.style-glassmorphism .demo-slider {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+}
+.style-glassmorphism .demo-slider::-webkit-slider-thumb {
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* ==========================================================================
+   2. NEUMORPHISM (.style-neumorphism)
+   ========================================================================== */
+.style-neumorphism {
+    background-color: #e0e5ec;
+}
+
+.style-neumorphism .demo-card {
+    background: #e0e5ec;
+    border: none;
+    border-radius: 24px;
+    box-shadow: 9px 9px 16px #bebebe, -9px -9px 16px #ffffff;
+    color: #2d3748;
+}
+
+.style-neumorphism .card-title {
+    color: #1a202c;
+    font-weight: 700;
+}
+
+.style-neumorphism .card-badge {
+    background: #e0e5ec;
+    color: #4a5568;
+    border-radius: 12px;
+    box-shadow: inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff;
+}
+
+.style-neumorphism .card-desc {
+    color: #718096;
+}
+
+.style-neumorphism .widget-label {
+    color: #4a5568;
+}
+
+.style-neumorphism .demo-btn {
+    background: #e0e5ec;
+    color: #2b6cb0;
+    border-radius: 12px;
+    box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #ffffff;
+    border: none;
+    font-weight: 700;
+    transition: box-shadow 0.2s ease;
+}
+.style-neumorphism .demo-btn:hover {
+    box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #ffffff;
+    color: #2c5282;
+}
+.style-neumorphism .demo-btn:active {
+    box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+}
+
+.style-neumorphism .toggle-slider {
+    background-color: #e0e5ec;
+    box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+}
+.style-neumorphism .toggle-slider:before {
+    background-color: #e0e5ec;
+    box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+}
+.style-neumorphism .demo-toggle input:checked + .toggle-slider:before {
+    background-color: #3182ce;
+}
+
+.style-neumorphism .demo-input {
+    background: #e0e5ec;
+    border: none;
+    color: #2d3748;
+    border-radius: 12px;
+    box-shadow: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+}
+.style-neumorphism .demo-input:focus {
+    box-shadow: inset 6px 6px 12px #bebebe, inset -6px -6px 12px #ffffff;
+}
+
+.style-neumorphism .demo-slider {
+    background: #e0e5ec;
+    box-shadow: inset 3px 3px 6px #bebebe, inset -3px -3px 6px #ffffff;
+}
+.style-neumorphism .demo-slider::-webkit-slider-thumb {
+    background: #e0e5ec;
+    box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff;
+}
+
+/* ==========================================================================
+   3. CLAYMORPHISM (.style-claymorphism)
+   ========================================================================== */
+.style-claymorphism {
+    background-color: #e0f2fe;
+}
+
+.style-claymorphism .demo-card {
+    background: #ffffff;
+    border: none;
+    border-radius: 36px;
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.1), inset -10px -10px 20px rgba(0, 0, 0, 0.08), inset 10px 10px 20px rgba(255, 255, 255, 0.9);
+    color: #1e293b;
+}
+
+.style-claymorphism .card-title {
+    color: #0f172a;
+    font-weight: 800;
+}
+
+.style-claymorphism .card-badge {
+    background: #a855f7;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(168, 85, 247, 0.3), inset -3px -3px 6px rgba(0, 0, 0, 0.2), inset 3px 3px 6px rgba(255, 255, 255, 0.4);
+}
+
+.style-claymorphism .card-desc {
+    color: #64748b;
+}
+
+.style-claymorphism .widget-label {
+    color: #64748b;
+}
+
+.style-claymorphism .demo-btn {
+    background: #0ea5e9;
+    color: white;
+    border-radius: 24px;
+    box-shadow: 6px 6px 16px rgba(14, 165, 233, 0.3), inset -4px -4px 8px rgba(0, 0, 0, 0.2), inset 4px 4px 8px rgba(255, 255, 255, 0.4);
+    border: none;
+    font-weight: 700;
+}
+.style-claymorphism .demo-btn:hover {
+    background: #0284c7;
+    box-shadow: 8px 8px 20px rgba(2, 132, 199, 0.35), inset -4px -4px 8px rgba(0, 0, 0, 0.2), inset 4px 4px 8px rgba(255, 255, 255, 0.4);
+}
+.style-claymorphism .demo-btn:active {
+    box-shadow: 2px 2px 8px rgba(14, 165, 233, 0.2), inset -2px -2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(255, 255, 255, 0.4);
+    transform: scale(0.98);
+}
+
+.style-claymorphism .toggle-slider {
+    background-color: #f1f5f9;
+    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.1), inset -4px -4px 8px white;
+}
+.style-claymorphism .toggle-slider:before {
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.12), inset -2px -2px 4px rgba(0,0,0,0.05), inset 2px 2px 4px white;
+}
+.style-claymorphism .demo-toggle input:checked + .toggle-slider {
+    background-color: #0ea5e9;
+    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.2), inset -4px -4px 8px rgba(255,255,255,0.3);
+}
+
+.style-claymorphism .demo-input {
+    background: #f8fafc;
+    border: none;
+    color: #1e293b;
+    border-radius: 20px;
+    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.08), inset -4px -4px 8px white;
+}
+.style-claymorphism .demo-input:focus {
+    box-shadow: inset 6px 6px 12px rgba(14, 165, 233, 0.2), inset -4px -4px 8px white;
+}
+
+.style-claymorphism .demo-slider {
+    background: #f1f5f9;
+    box-shadow: inset 3px 3px 6px rgba(0,0,0,0.1), inset -3px -3px 6px white;
+    height: 12px;
+    border-radius: 10px;
+}
+.style-claymorphism .demo-slider::-webkit-slider-thumb {
+    background: #a855f7;
+    box-shadow: 4px 4px 10px rgba(168, 85, 247, 0.3), inset -2px -2px 4px rgba(0,0,0,0.2), inset 2px 2px 4px rgba(255,255,255,0.4);
+    width: 26px;
+    height: 26px;
+}
+
+/* ==========================================================================
+   4. DARK MODE (.style-darkmode)
+   ========================================================================== */
+.style-darkmode {
+    background-color: #090d16;
+}
+
+.style-darkmode .demo-card {
+    background: #111827;
+    border: 1px solid #374151;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.8);
+    color: #f9fafb;
+}
+
+.style-darkmode .card-title {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.style-darkmode .card-badge {
+    background: rgba(59, 130, 246, 0.2);
+    color: #60a5fa;
+    border: 1px solid #3b82f6;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+.style-darkmode .card-desc {
+    color: #9ca3af;
+}
+
+.style-darkmode .widget-label {
+    color: #9ca3af;
+}
+
+.style-darkmode .demo-btn {
+    background: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+    border: none;
+    font-weight: 600;
+}
+.style-darkmode .demo-btn:hover {
+    background: #2563eb;
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.7);
+}
+.style-darkmode .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-darkmode .toggle-slider {
+    background-color: #374151;
+}
+.style-darkmode .toggle-slider:before {
+    background-color: #9ca3af;
+}
+.style-darkmode .demo-toggle input:checked + .toggle-slider {
+    background-color: #3b82f6;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+.style-darkmode .demo-toggle input:checked + .toggle-slider:before {
+    background-color: #ffffff;
+}
+
+.style-darkmode .demo-input {
+    background: #1f2937;
+    border: 1px solid #4b5563;
+    color: #f9fafb;
+    border-radius: 8px;
+}
+.style-darkmode .demo-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.5);
+}
+
+.style-darkmode .demo-slider {
+    background: #374151;
+}
+.style-darkmode .demo-slider::-webkit-slider-thumb {
+    background: #3b82f6;
+    box-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
+}
+
+/* ==========================================================================
+   5. APPLE HIG (.style-apple)
+   ========================================================================== */
+.style-apple {
+    background-color: #f5f5f7;
+}
+
+.style-apple .demo-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    color: #1d1d1f;
+}
+
+.style-apple .card-title {
+    color: #1d1d1f;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.style-apple .card-badge {
+    background: #0071e3;
+    color: white;
+    border-radius: 100px;
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.style-apple .card-desc {
+    color: #86868b;
+}
+
+.style-apple .widget-label {
+    color: #86868b;
+}
+
+.style-apple .demo-btn {
+    background: #0071e3;
+    color: white;
+    border-radius: 100px;
+    box-shadow: none;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+.style-apple .demo-btn:hover {
+    background: #0077ed;
+}
+.style-apple .demo-btn:active {
+    opacity: 0.8;
+}
+
+.style-apple .toggle-slider {
+    background-color: #e9e9eb;
+    border-radius: 100px;
+}
+.style-apple .toggle-slider:before {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.style-apple .demo-toggle input:checked + .toggle-slider {
+    background-color: #34c759;
+}
+
+.style-apple .demo-input {
+    background: #f5f5f7;
+    border: 1px solid transparent;
+    color: #1d1d1f;
+    border-radius: 10px;
+}
+.style-apple .demo-input:focus {
+    border-color: #0071e3;
+    background: #ffffff;
+}
+
+.style-apple .demo-slider {
+    background: #e9e9eb;
+    height: 6px;
+    border-radius: 100px;
+}
+.style-apple .demo-slider::-webkit-slider-thumb {
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    border: 1px solid #d2d2d7;
+}
+
+/* ==========================================================================
+   6. AURORA / COSMIC (.style-aurora)
+   ========================================================================== */
+.style-aurora {
+    background: radial-gradient(circle at 20% 30%, #4a00e0 0%, #8e2de2 50%, #0d0b18 100%);
+    position: relative;
+}
+
+.style-aurora .demo-card {
+    background: rgba(20, 15, 38, 0.65);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.style-aurora .card-title {
+    color: white;
+    font-weight: 800;
+    background: linear-gradient(to right, #ffffff, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.style-aurora .card-badge {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+    border: none;
+}
+
+.style-aurora .card-desc {
+    color: #cbd5e1;
+}
+
+.style-aurora .widget-label {
+    color: #cbd5e1;
+}
+
+.style-aurora .demo-btn {
+    background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(236, 72, 153, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-weight: 700;
+}
+.style-aurora .demo-btn:hover {
+    background: linear-gradient(135deg, #c084fc 0%, #f472b6 100%);
+    box-shadow: 0 6px 25px rgba(236, 72, 153, 0.7);
+}
+.style-aurora .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-aurora .toggle-slider {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.style-aurora .toggle-slider:before {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.style-aurora .demo-toggle input:checked + .toggle-slider {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.5);
+}
+
+.style-aurora .demo-input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    color: white;
+    border-radius: 14px;
+}
+.style-aurora .demo-input:focus {
+    border-color: #ec4899;
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.4);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.style-aurora .demo-slider {
+    background: rgba(255, 255, 255, 0.15);
+}
+.style-aurora .demo-slider::-webkit-slider-thumb {
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    box-shadow: 0 0 15px rgba(236, 72, 153, 0.6);
+}
+
+/* ==========================================================================
+   7. LIQUID GLASS (.style-liquidglass)
+   ========================================================================== */
+.style-liquidglass {
+    background: radial-gradient(circle at 30% 30%, #0284c7, #312e81, #0f172a);
+    position: relative;
+    overflow: hidden;
+}
+/* Simulated floating fluid blobs behind the glass */
+.style-liquidglass::before,
+.style-liquidglass::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 0;
+    pointer-events: none;
+    animation: blobFloat 12s infinite alternate ease-in-out;
+}
+.style-liquidglass::before {
+    width: 250px; height: 250px;
+    background: #06b6d4;
+    top: 10%; left: 15%;
+}
+.style-liquidglass::after {
+    width: 280px; height: 280px;
+    background: #a855f7;
+    bottom: 10%; right: 15%;
+    animation-delay: -6s;
+}
+@keyframes blobFloat {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(40px, -40px) scale(1.2); }
+}
+
+@keyframes liquidMorph {
+    0% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+    50% { border-radius: 60% 40% 30% 70% / 50% 60% 40% 60%; }
+    100% { border-radius: 50% 50% 60% 40% / 60% 40% 70% 30%; }
+}
+
+.style-liquidglass .demo-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    box-shadow: 0 10px 30px 0 rgba(31, 38, 135, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.4);
+    color: white;
+    position: relative;
+    z-index: 1;
+    animation: liquidMorph 10s ease-in-out infinite alternate;
+    padding: 36px 30px;
+}
+
+.style-liquidglass .card-title {
+    color: white;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    font-weight: 800;
+}
+
+.style-liquidglass .card-badge {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.style-liquidglass .card-desc {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.style-liquidglass .widget-label {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+}
+
+.style-liquidglass .demo-btn {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.5);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 50% 30% 60% 40% / 40% 50% 30% 60%;
+    font-weight: 700;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+.style-liquidglass .demo-btn:hover {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.6);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.style-liquidglass .demo-btn:active {
+    transform: scale(0.96);
+}
+
+.style-liquidglass .toggle-slider {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 50% 40% 60% 40% / 40% 50% 50% 60%;
+}
+.style-liquidglass .toggle-slider:before {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    border-radius: 50%;
+}
+.style-liquidglass .demo-toggle input:checked + .toggle-slider {
+    background: rgba(6, 182, 212, 0.6);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.5);
+}
+
+.style-liquidglass .demo-input {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(16px);
+    color: white;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    padding: 14px 20px;
+    box-shadow: inset 0 1px 2px rgba(255,255,255,0.2);
+    transition: all 0.4s ease;
+}
+.style-liquidglass .demo-input:focus {
+    border-color: #06b6d4;
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.4), inset 0 1px 3px rgba(255,255,255,0.5);
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 20px;
+}
+
+.style-liquidglass .demo-slider {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+}
+.style-liquidglass .demo-slider::-webkit-slider-thumb {
+    background: #06b6d4;
+    border: 2px solid white;
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.6);
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+
+/* ==========================================================================
+   8. FROSTED (.style-frosted)
+   ========================================================================== */
+.style-frosted {
+    background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0f172a 100%);
+}
+
+.style-frosted .demo-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4), inset 0 1px 2px rgba(255,255,255,0.3);
+    color: white;
+}
+
+.style-frosted .card-title {
+    color: white;
+    font-weight: 800;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.style-frosted .card-badge {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #38bdf8;
+    border-radius: 100px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.style-frosted .card-desc {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.style-frosted .widget-label {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.style-frosted .demo-btn {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2), inset 0 1px 2px rgba(255,255,255,0.4);
+    transition: all 0.3s ease;
+}
+.style-frosted .demo-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3), inset 0 2px 4px rgba(255,255,255,0.6);
+}
+.style-frosted .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-frosted .toggle-slider {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+}
+.style-frosted .toggle-slider:before {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+.style-frosted .demo-toggle input:checked + .toggle-slider {
+    background: rgba(56, 189, 248, 0.6);
+    border-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+
+.style-frosted .demo-input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    color: white;
+    border-radius: 14px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+.style-frosted .demo-input:focus {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: #38bdf8;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4), inset 0 1px 2px rgba(255,255,255,0.4);
+}
+
+.style-frosted .demo-slider {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+}
+.style-frosted .demo-slider::-webkit-slider-thumb {
+    background: #38bdf8;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+    border: 2px solid white;
+}
+
+/* ==========================================================================
+   9. GRADIENT (.style-gradient)
+   ========================================================================== */
+.style-gradient {
+    background: linear-gradient(135deg, #4f46e5 0%, #c026d3 50%, #f97316 100%);
+}
+
+.style-gradient .demo-card {
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5), inset 0 1px 2px rgba(255,255,255,0.3);
+    color: white;
+}
+
+.style-gradient .card-title {
+    color: white;
+    font-weight: 800;
+    background: linear-gradient(to right, #ffffff, #fcd34d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.style-gradient .card-badge {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 4px 15px rgba(239,68,68,0.4);
+}
+
+.style-gradient .card-desc {
+    color: #e2e8f0;
+}
+
+.style-gradient .widget-label {
+    color: #e2e8f0;
+}
+
+.style-gradient .demo-btn {
+    background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-weight: 800;
+    box-shadow: 0 8px 25px rgba(239,68,68,0.5);
+    transition: all 0.3s ease;
+}
+.style-gradient .demo-btn:hover {
+    background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+    box-shadow: 0 10px 30px rgba(249,115,22,0.7);
+}
+.style-gradient .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-gradient .toggle-slider {
+    background: rgba(255, 255, 255, 0.2);
+}
+.style-gradient .toggle-slider:before {
+    background: white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.style-gradient .demo-toggle input:checked + .toggle-slider {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    box-shadow: 0 0 15px rgba(239,68,68,0.5);
+}
+
+.style-gradient .demo-input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 14px;
+}
+.style-gradient .demo-input:focus {
+    border-color: #f59e0b;
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.5);
+}
+
+.style-gradient .demo-slider {
+    background: rgba(255, 255, 255, 0.2);
+}
+.style-gradient .demo-slider::-webkit-slider-thumb {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    box-shadow: 0 0 15px rgba(239,68,68,0.6);
+}
+
+/* ==========================================================================
+   10. MORPHING (.style-morphing)
+   ========================================================================== */
+.style-morphing {
+    background-color: #1e1b4b;
+}
+
+@keyframes morphingCard {
+    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+    50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+    100% { border-radius: 50% 50% 70% 30% / 40% 60% 40% 60%; }
+}
+
+.style-morphing .demo-card {
+    background: #312e81;
+    border: 2px solid #6366f1;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4), inset 0 0 20px rgba(99,102,241,0.5);
+    color: white;
+    animation: morphingCard 8s ease-in-out infinite alternate;
+    padding: 48px 40px;
+}
+
+.style-morphing .card-title {
+    color: white;
+    font-weight: 800;
+}
+
+.style-morphing .card-badge {
+    background: #ec4899;
+    color: white;
+    border-radius: 50% 30% 60% 40% / 40% 50% 30% 60%;
+    box-shadow: 0 4px 15px rgba(236,72,153,0.4);
+}
+
+.style-morphing .card-desc {
+    color: #c7d2fe;
+}
+
+.style-morphing .widget-label {
+    color: #c7d2fe;
+}
+
+.style-morphing .demo-btn {
+    background: #ec4899;
+    color: white;
+    border: none;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    font-weight: 700;
+    box-shadow: 0 8px 25px rgba(236,72,153,0.5);
+    transition: all 0.4s ease;
+}
+.style-morphing .demo-btn:hover {
+    background: #f43f5e;
+    border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+    box-shadow: 0 10px 30px rgba(244,63,94,0.7);
+}
+.style-morphing .demo-btn:active {
+    transform: scale(0.96);
+}
+
+.style-morphing .toggle-slider {
+    background: #4338ca;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.style-morphing .toggle-slider:before {
+    background: white;
+    border-radius: 50%;
+}
+.style-morphing .demo-toggle input:checked + .toggle-slider {
+    background: #ec4899;
+    box-shadow: 0 0 15px rgba(236,72,153,0.5);
+}
+
+.style-morphing .demo-input {
+    background: #27272a;
+    border: 1px solid #6366f1;
+    color: white;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+.style-morphing .demo-input:focus {
+    border-color: #ec4899;
+    box-shadow: 0 0 15px rgba(236,72,153,0.5);
+    border-radius: 16px;
+}
+
+.style-morphing .demo-slider {
+    background: #4338ca;
+    border-radius: 10px;
+}
+.style-morphing .demo-slider::-webkit-slider-thumb {
+    background: #ec4899;
+    box-shadow: 0 0 15px rgba(236,72,153,0.6);
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+/* ==========================================================================
+   11. MINIMAL DARK (.style-minimaldark)
+   ========================================================================== */
+.style-minimaldark {
+    background-color: #09090b;
+}
+
+.style-minimaldark .demo-card {
+    background: #18181b;
+    border: 1px solid #27272a;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    color: #fafafa;
+}
+
+.style-minimaldark .card-title {
+    color: #fafafa;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.style-minimaldark .card-badge {
+    background: #27272a;
+    color: #a1a1aa;
+    border: 1px solid #3f3f46;
+    border-radius: 6px;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+.style-minimaldark .card-desc {
+    color: #a1a1aa;
+}
+
+.style-minimaldark .widget-label {
+    color: #a1a1aa;
+}
+
+.style-minimaldark .demo-btn {
+    background: #fafafa;
+    color: #09090b;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+}
+.style-minimaldark .demo-btn:hover {
+    background: #e4e4e7;
+    box-shadow: 0 6px 16px rgba(255,255,255,0.2);
+}
+.style-minimaldark .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-minimaldark .toggle-slider {
+    background: #27272a;
+    border: 1px solid #3f3f46;
+}
+.style-minimaldark .toggle-slider:before {
+    background: #a1a1aa;
+}
+.style-minimaldark .demo-toggle input:checked + .toggle-slider {
+    background: #fafafa;
+}
+.style-minimaldark .demo-toggle input:checked + .toggle-slider:before {
+    background: #09090b;
+}
+
+.style-minimaldark .demo-input {
+    background: #09090b;
+    border: 1px solid #27272a;
+    color: #fafafa;
+    border-radius: 8px;
+}
+.style-minimaldark .demo-input:focus {
+    border-color: #fafafa;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.style-minimaldark .demo-slider {
+    background: #27272a;
+    height: 6px;
+}
+.style-minimaldark .demo-slider::-webkit-slider-thumb {
+    background: #fafafa;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.3);
+}
+
+/* ==========================================================================
+   12. LUXURY (.style-luxury)
+   ========================================================================== */
+.style-luxury {
+    background-color: #0a0a0a;
+}
+
+.style-luxury .demo-card {
+    background: #141414;
+    border: 1px solid #d4af37;
+    border-radius: 0px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.9), inset 0 0 20px rgba(212,175,55,0.15);
+    color: #f3f3f3;
+    font-family: serif;
+}
+
+.style-luxury .card-title {
+    color: #d4af37;
+    font-weight: 400;
+    font-family: serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.style-luxury .card-badge {
+    background: transparent;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 0px;
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: none;
+}
+
+.style-luxury .card-desc {
+    color: #a3a3a3;
+    font-family: var(--font-sans);
+    letter-spacing: 0.5px;
+}
+
+.style-luxury .widget-label {
+    color: #a3a3a3;
+    font-family: var(--font-sans);
+    letter-spacing: 0.5px;
+}
+
+.style-luxury .demo-btn {
+    background: linear-gradient(135deg, #d4af37 0%, #aa8010 100%);
+    color: #0a0a0a;
+    border: none;
+    border-radius: 0px;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 25px rgba(212,175,55,0.4);
+}
+.style-luxury .demo-btn:hover {
+    background: linear-gradient(135deg, #ebd870 0%, #c49a22 100%);
+    box-shadow: 0 10px 30px rgba(212,175,55,0.6);
+}
+.style-luxury .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-luxury .toggle-slider {
+    background: #262626;
+    border: 1px solid #d4af37;
+    border-radius: 0px;
+}
+.style-luxury .toggle-slider:before {
+    background: #d4af37;
+    border-radius: 0px;
+}
+.style-luxury .demo-toggle input:checked + .toggle-slider {
+    background: linear-gradient(135deg, #d4af37, #aa8010);
+}
+.style-luxury .demo-toggle input:checked + .toggle-slider:before {
+    background: #0a0a0a;
+}
+
+.style-luxury .demo-input {
+    background: #0a0a0a;
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    border-radius: 0px;
+    font-family: var(--font-sans);
+}
+.style-luxury .demo-input:focus {
+    border-color: #ebd870;
+    box-shadow: 0 0 15px rgba(212,175,55,0.4);
+}
+
+.style-luxury .demo-slider {
+    background: #262626;
+    border: 1px solid #d4af37;
+    border-radius: 0px;
+    height: 6px;
+}
+.style-luxury .demo-slider::-webkit-slider-thumb {
+    background: #d4af37;
+    border-radius: 0px;
+    box-shadow: 0 0 15px rgba(212,175,55,0.6);
+    width: 16px;
+    height: 24px;
+}
+

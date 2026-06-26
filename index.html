@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI/UX Stylepedia — Feel & Understand Every Design Aesthetic</title>
+    <meta name="description"
+        content="An immersive interactive showcase and playground exploring 18 distinct UI/UX styling categories. Feel the tactile differences between Flat, Neumorphism, Cyberpunk, Skeuomorphic, and more.">
+
+    <!-- Modern Fonts: Inter, Outfit, Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;900&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Modular Stylesheets -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles-classic.css">
+    <link rel="stylesheet" href="styles-modern.css">
+    <link rel="stylesheet" href="styles-experimental.css">
+    <link rel="stylesheet" href="styles-platform.css">
+</head>
+
+<body>
+    <!-- Background Aurora Effect -->
+    <div class="aurora-bg">
+        <div class="aurora-blob aurora-1"></div>
+        <div class="aurora-blob aurora-2"></div>
+        <div class="aurora-blob aurora-3"></div>
+    </div>
+
+    <!-- Master Glassmorphic Header -->
+    <header class="master-header">
+        <div class="header-container">
+            <div class="logo-area" id="logo-home-btn">
+                <div class="logo-icon"><i class="fa-solid fa-layer-group"></i></div>
+                <div class="logo-text">
+                    <h1>UI/UX Stylepedia</h1>
+                    <span class="logo-tag">Interactive Design Showcase & Playground</span>
+                </div>
+            </div>
+
+            <nav class="category-nav" id="grid-filter-nav">
+                <button class="filter-btn active" data-filter="all">All Styles (50)</button>
+                <button class="filter-btn" data-filter="classic"><i class="fa-solid fa-landmark"></i> Classic
+                    Foundations (8)</button>
+                <button class="filter-btn" data-filter="modern"><i class="fa-solid fa-wand-magic-sparkles"></i> Modern &
+                    Popular (12)</button>
+                <button class="filter-btn" data-filter="experimental"><i class="fa-solid fa-flask"></i> Experimental &
+                    Artistic (15)</button>
+                <button class="filter-btn" data-filter="platform"><i class="fa-solid fa-display"></i> Platform &
+                    Industry (15)</button>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#about-modal" class="action-btn info-btn" id="open-about-btn"><i
+                        class="fa-solid fa-circle-info"></i> About Project</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="master-main">
+        <!-- VIEW 1: STYLE GRID VIEW -->
+        <section id="style-grid-view" class="view-section active">
+            <div class="hero-intro">
+                <h2>Explore the DNA of User Interfaces</h2>
+                <p>Click on any style card to enter the <strong>Immersive Sandbox</strong> where you can feel, interact
+                    with, and inspect live UI components designed in that specific aesthetic.</p>
+            </div>
+
+            <div class="style-grid" id="style-grid-container">
+                <!-- Grid cards will be dynamically populated or enhanced by app.js, but we provide the rich semantic HTML anchor grid here for ultra-fast rendering -->
+            </div>
+        </section>
+
+        <!-- VIEW 2: IMMERSIVE SANDBOX VIEW -->
+        <section id="sandbox-view" class="view-section">
+            <div class="sandbox-header">
+                <button class="back-to-grid-btn" id="back-to-grid-btn"><i class="fa-solid fa-arrow-left"></i> Back to
+                    Grid View</button>
+                <div class="sandbox-style-title">
+                    <span class="style-category-badge" id="sandbox-category-badge">Category</span>
+                    <h2 id="sandbox-style-name">Style Name</h2>
+                </div>
+                <div class="style-quick-switcher" id="style-quick-switcher">
+                    <!-- Dynamic quick switcher buttons -->
+                </div>
+            </div>
+
+            <div class="sandbox-layout">
+                <!-- Left: Interactive Sandbox Stage -->
+                <div class="sandbox-stage-container">
+                    <div class="stage-top-bar">
+                        <span class="stage-title"><i class="fa-solid fa-gamepad"></i> Live Interactive Sandbox</span>
+                        <span class="stage-subtitle">Interact with widgets below to feel the tactile feedback &
+                            physics</span>
+                    </div>
+
+                    <!-- The actual interactive stage where the active style class is applied -->
+                    <div class="interactive-stage" id="interactive-stage">
+                        <div class="widget-wrapper" id="widget-wrapper">
+                            <!-- Widget 1: Interactive Card -->
+                            <div class="demo-card" id="demo-card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Interactive Element</h3>
+                                    <span class="card-badge">Active</span>
+                                </div>
+                                <p class="card-desc">Experience how containers, elevation, typography, and depth operate
+                                    within this unique design system.</p>
+
+                                <div class="widget-group">
+                                    <!-- Widget 2: Button -->
+                                    <div class="widget-item">
+                                        <label class="widget-label">Primary Button</label>
+                                        <button class="demo-btn" id="demo-btn-action">Click Me</button>
+                                    </div>
+
+                                    <!-- Widget 3: Toggle Switch -->
+                                    <div class="widget-item">
+                                        <label class="widget-label">Toggle Switch</label>
+                                        <label class="demo-toggle">
+                                            <input type="checkbox" id="demo-toggle-input" checked>
+                                            <span class="toggle-slider"></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="widget-group-column">
+                                    <!-- Widget 4: Text Input -->
+                                    <div class="widget-item-full">
+                                        <label class="widget-label">Input Field</label>
+                                        <input type="text" class="demo-input" id="demo-input-field"
+                                            placeholder="Type something to test focus...">
+                                    </div>
+
+                                    <!-- Widget 5: Range Slider -->
+                                    <div class="widget-item-full">
+                                        <label class="widget-label"><span>Range Slider</span> <span>(<span id="slider-val-display">50</span>%)</span></label>
+                                        <input type="range" class="demo-slider" id="demo-range-slider" min="0" max="100"
+                                            value="50">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Feedback Log -->
+                    <div class="action-feedback-log">
+                        <div class="log-header"><i class="fa-solid fa-bolt"></i> Tactile Event Log</div>
+                        <div class="log-content" id="log-content">
+                            <span class="log-item default-log">Sandbox initialized. Try clicking buttons or dragging
+                                sliders above!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Inspector & Code Exporter -->
+                <div class="sandbox-inspector-container">
+                    <div class="inspector-tabs">
+                        <button class="tab-btn active" data-tab="tab-overview"><i class="fa-solid fa-book-open"></i>
+                            Overview & History</button>
+                        <button class="tab-btn" data-tab="tab-rules"><i class="fa-solid fa-palette"></i> Aesthetic
+                            Rules</button>
+                        <button class="tab-btn" data-tab="tab-code"><i class="fa-solid fa-code"></i> Code
+                            Exporter</button>
+                        <button class="tab-btn" data-tab="tab-stitch"><i class="fa-solid fa-robot"></i> Stitch AI
+                            Prompt</button>
+                    </div>
+
+                    <div class="inspector-content">
+                        <!-- TAB 1: Overview & History -->
+                        <div id="tab-overview" class="tab-pane active">
+                            <h3 id="inspector-title">Style Title</h3>
+                            <p class="inspector-tagline" id="inspector-tagline">Tagline goes here</p>
+
+                            <div class="inspector-section">
+                                <h4><i class="fa-solid fa-clock-rotate-left"></i> Background & Origins</h4>
+                                <p id="inspector-history">History details...</p>
+                            </div>
+
+                            <div class="inspector-section">
+                                <h4><i class="fa-solid fa-circle-check"></i> Best Used For</h4>
+                                <ul id="inspector-usecases" class="usecase-list">
+                                    <li>Use case 1</li>
+                                </ul>
+                            </div>
+
+                            <div class="inspector-section">
+                                <h4><i class="fa-solid fa-triangle-exclamation"></i> Potential Pitfalls</h4>
+                                <p id="inspector-pitfalls">Pitfall details...</p>
+                            </div>
+                        </div>
+
+                        <!-- TAB 2: Aesthetic Rules -->
+                        <div id="tab-rules" class="tab-pane">
+                            <h3>Aesthetic & Architectural Blueprint</h3>
+                            <p>Key building blocks and design tokens that characterize this style.</p>
+
+                            <div class="inspector-section">
+                                <h4><i class="fa-solid fa-swatchbook"></i> Signature Color Palette</h4>
+                                <div class="palette-display" id="palette-display">
+                                    <!-- Dynamic color swatches -->
+                                </div>
+                            </div>
+
+                            <div class="inspector-section">
+                                <h4><i class="fa-solid fa-cubes"></i> Core CSS Properties</h4>
+                                <div class="css-properties-list" id="css-properties-list">
+                                    <!-- Dynamic CSS properties -->
+                                </div>
+                            </div>
+
+                            <div class="inspector-section">
+                                <h4><i class="fa-solid fa-font"></i> Typography Strategy</h4>
+                                <p id="inspector-typography">Typography details...</p>
+                            </div>
+                        </div>
+
+                        <!-- TAB 3: Code Exporter -->
+                        <div id="tab-code" class="tab-pane">
+                            <div class="code-header-bar">
+                                <h3>Vanilla HTML & CSS Snippet</h3>
+                                <button class="copy-code-btn" id="copy-code-btn"><i class="fa-regular fa-copy"></i> Copy
+                                    Snippet</button>
+                            </div>
+                            <p>Drop-in code snippet to instantly apply this aesthetic to your own components.</p>
+                            <pre><code id="code-snippet-block" class="language-css">/* Code will be injected here */</code></pre>
+                        </div>
+
+                        <!-- TAB 4: Stitch AI Prompt -->
+                        <div id="tab-stitch" class="tab-pane">
+                            <div class="code-header-bar">
+                                <h3>StitchMCP System Prompt</h3>
+                                <button class="copy-code-btn" id="copy-stitch-btn"><i class="fa-regular fa-copy"></i>
+                                    Copy Prompt</button>
+                            </div>
+                            <p>Use this engineered prompt with <strong>StitchMCP</strong> (`generate_screen_from_text`
+                                or `create_design_system`) to generate flawless screens adhering to this exact UI/UX
+                                style.</p>
+                            <pre><code id="stitch-prompt-block" class="language-markdown">/* Prompt will be injected here */</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Master Footer / Bottom Section -->
+    <footer class="master-footer">
+        <div class="footer-container">
+            <!-- Top Metric / Highlight Bar -->
+            <div class="footer-metrics-grid">
+                <div class="footer-metric-card">
+                    <div class="metric-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="metric-info">
+                        <h4>50+ Unique UI/UX Styles</h4>
+                        <p>Fully interactive, inspectable & live-themed</p>
+                    </div>
+                </div>
+                <div class="footer-metric-card">
+                    <div class="metric-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="metric-info">
+                        <h4>Zero-Dependency Architecture</h4>
+                        <p>Pure Vanilla HTML5, CSS3, & JavaScript</p>
+                    </div>
+                </div>
+                <div class="footer-metric-card">
+                    <div class="metric-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <div class="metric-info">
+                        <h4>AI-Ready System Prompts</h4>
+                        <p>Engineered for StitchMCP & Generative UI</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Main Columns -->
+            <div class="footer-columns">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <div class="logo-icon"><i class="fa-solid fa-clapperboard"></i></div>
+                        <div class="logo-text">
+                            <h3>UI/UX STYLEPEDIA</h3>
+                            <span class="logo-tag">Master Compendium</span>
+                        </div>
+                    </div>
+                    <p class="footer-bio">The ultimate tactile playground and living compendium of frontend architecture, design tokens, and aesthetic blueprints. Explore, feel, and construct state-of-the-art digital experiences.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4><i class="fa-solid fa-shapes"></i> Thematic Pillars</h4>
+                    <ul class="footer-links">
+                        <li>Classic Foundations</li>
+                        <li>Modern & Popular</li>
+                        <li>Experimental & Artistic</li>
+                        <li>Platform & Industry</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4><i class="fa-solid fa-gears"></i> Engine Capabilities</h4>
+                    <ul class="footer-links">
+                        <li>Real-time Physics Logging</li>
+                        <li>Instant Variable Theming</li>
+                        <li>Aesthetic Blueprints</li>
+                        <li>Drop-in Code Snippets</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4><i class="fa-solid fa-microchip"></i> Built For</h4>
+                    <ul class="footer-links">
+                        <li>Frontend Engineers</li>
+                        <li>UI/UX Product Designers</li>
+                        <li>AI Agent Subsystems</li>
+                        <li>Design System Architects</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Bar -->
+            <div class="footer-bottom-bar">
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Live System Environment — All 50+ Style Engines Operational</span>
+                </div>
+                <div class="copyright-info">
+                    © 2026 UI/UX Stylepedia. Crafted for state-of-the-art visual excellence.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- About Modal -->
+    <div class="modal-overlay" id="about-modal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2>About UI/UX Stylepedia</h2>
+                <button class="close-modal-btn" id="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <p>Welcome to the ultimate interactive compendium of UI/UX design styles! This project bridges the gap
+                    between static design inspiration and real, tactile frontend execution.</p>
+                <h3>Why this exists</h3>
+                <p>Design trends like Glassmorphism, Neumorphism, and Brutalism look amazing on Dribbble or static
+                    mockups, but understanding how they feel in practice—how buttons press, how sliders react, and how
+                    depth operates—requires live code.</p>
+                <h3>The 4 Major Categories</h3>
+                <ul>
+                    <li><strong>Classic Foundations:</strong> The bedrock systems like Flat, Skeuomorphic, Material,
+                        Minimalist, and Metro.</li>
+                    <li><strong>Modern & Popular:</strong> Leading trends like Glassmorphism, Neumorphism, Claymorphism,
+                        Dark Mode, Apple HIG, and Aurora/Cosmic.</li>
+                    <li><strong>Experimental & Artistic:</strong> Expressive brands like Brutalism, Cyberpunk, Swiss
+                        Editorial, and Organic Biomorphic.</li>
+                    <li><strong>Platform & Industry:</strong> Tailored environments like Retro Terminal, Pixel Art,
+                        Analytics Dashboards, and E-commerce.</li>
+                </ul>
+                <p class="modal-footer-note">Crafted with pure HTML5, Vanilla CSS, and JavaScript. Zero external bloat,
+                    maximum visual fidelity.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Application Script -->
+    <script src="app.js"></script>
+</body>
+
+</html>

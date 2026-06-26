@@ -1,0 +1,1703 @@
+/* ==========================================================================
+   PLATFORM & INDUSTRY-SPECIFIC STYLESHEET
+   1. Retro / Terminal (.style-terminal)
+   2. Pixel Art / Game UI (.style-pixel)
+   3. Dashboard / Data Viz (.style-dashboard)
+   4. E-commerce (.style-ecommerce)
+   ========================================================================== */
+
+/* ==========================================================================
+   FULL-PAGE IMMERSION OVERRIDES (PLATFORM & INDUSTRY)
+   ========================================================================== */
+body.style-terminal {
+    --bg-main: #000000;
+    --bg-surface: #0a1f0d;
+    --text-main: #22c55e;
+    --text-muted: #15803d;
+    --border-color: #22c55e;
+    --accent-color: #22c55e;
+    --font-sans: 'Fira Code', monospace;
+}
+body.style-terminal .aurora-bg { display: none; }
+
+body.style-pixel {
+    --bg-main: #0f172a;
+    --bg-surface: #1e293b;
+    --text-main: #ffffff;
+    --border-color: #3b82f6;
+    --accent-color: #3b82f6;
+    --font-sans: 'Press Start 2P', monospace;
+}
+body.style-pixel .aurora-bg { display: none; }
+
+body.style-dashboard {
+    --bg-main: #0f172a;
+    --bg-surface: #1e293b;
+    --text-main: #f8fafc;
+    --border-color: #334155;
+    --accent-color: #0284c7;
+}
+body.style-dashboard .aurora-bg { display: none; }
+
+body.style-ecommerce {
+    --bg-main: #f8fafc;
+    --bg-surface: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --border-color: #cbd5e1;
+    --accent-color: #ea580c;
+}
+body.style-ecommerce .aurora-bg { display: none; }
+
+body.style-typography {
+    --bg-main: #ffffff;
+    --bg-surface: #ffffff;
+    --text-main: #000000;
+    --text-muted: #666666;
+    --border-color: #000000;
+    --accent-color: #000000;
+}
+body.style-typography .aurora-bg { display: none; }
+
+body.style-illustration {
+    --bg-main: #fef9c3;
+    --bg-surface: #ffffff;
+    --text-main: #1c1917;
+    --text-muted: #78350f;
+    --border-color: #f97316;
+    --accent-color: #f97316;
+}
+body.style-illustration .aurora-bg { display: none; }
+
+body.style-micro {
+    --bg-main: #111827;
+    --bg-surface: #1f2937;
+    --text-main: #f9fafb;
+    --border-color: #374151;
+    --accent-color: #6366f1;
+}
+body.style-micro .aurora-bg { display: none; }
+
+body.style-cardbased {
+    --bg-main: #f1f5f9;
+    --bg-surface: #ffffff;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --border-color: #e2e8f0;
+    --accent-color: #3b82f6;
+}
+body.style-cardbased .aurora-bg { display: none; }
+
+body.style-storytelling {
+    --bg-main: #030712;
+    --bg-surface: #111827;
+    --text-main: #f8fafc;
+    --border-color: #374151;
+    --accent-color: #a855f7;
+}
+
+body.style-eco {
+    --bg-main: #f0fdf4;
+    --bg-surface: #ffffff;
+    --text-main: #14532d;
+    --text-muted: #166534;
+    --border-color: #bbf7d0;
+    --accent-color: #16a34a;
+}
+body.style-eco .aurora-bg { display: none; }
+
+body.style-playful {
+    --bg-main: #fef08a;
+    --bg-surface: #ffffff;
+    --text-main: #000000;
+    --text-muted: #444444;
+    --border-color: #ec4899;
+    --accent-color: #ec4899;
+}
+body.style-playful .aurora-bg { display: none; }
+
+body.style-splitscreen {
+    --bg-main: #111827;
+    --bg-surface: #1f2937;
+    --text-main: #ffffff;
+    --border-color: #3b82f6;
+    --accent-color: #3b82f6;
+}
+body.style-splitscreen .aurora-bg { display: none; }
+
+body.style-magazine {
+    --bg-main: #ffffff;
+    --bg-surface: #ffffff;
+    --text-main: #000000;
+    --text-muted: #666666;
+    --border-color: #000000;
+    --accent-color: #dc2626;
+}
+body.style-magazine .aurora-bg { display: none; }
+
+body.style-timeline {
+    --bg-main: #f8fafc;
+    --bg-surface: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --border-color: #cbd5e1;
+    --accent-color: #6366f1;
+}
+body.style-timeline .aurora-bg { display: none; }
+
+body.style-gamified {
+    --bg-main: #09090b;
+    --bg-surface: #18181b;
+    --text-main: #ffffff;
+    --border-color: #8b5cf6;
+    --accent-color: #8b5cf6;
+}
+body.style-gamified .aurora-bg { display: none; }
+
+/* ==========================================================================
+   1. RETRO / TERMINAL (.style-terminal)
+   ========================================================================== */
+.style-terminal {
+    background-color: #050b05;
+    position: relative;
+}
+/* Scanline overlay simulation */
+.style-terminal::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+    background-size: 100% 4px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.style-terminal .demo-card {
+    background: #020602;
+    border: 2px solid #22c55e;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.4), inset 0 0 10px rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+    font-family: var(--font-mono);
+    position: relative;
+    z-index: 2;
+}
+
+.style-terminal .card-title {
+    color: #22c55e;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.style-terminal .card-title::before {
+    content: ">";
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.style-terminal .card-badge {
+    background: transparent;
+    color: #22c55e;
+    border: 1px solid #22c55e;
+    border-radius: 0px;
+    font-family: var(--font-mono);
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
+}
+
+.style-terminal .card-desc {
+    color: #86efac;
+}
+
+.style-terminal .widget-label {
+    color: #22c55e;
+    font-family: var(--font-mono);
+}
+
+.style-terminal .demo-btn {
+    background: #000000;
+    color: #22c55e;
+    border: 2px solid #22c55e;
+    border-radius: 0px;
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.5);
+    font-family: var(--font-mono);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.style-terminal .demo-btn:hover {
+    background: #22c55e;
+    color: #000000;
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.8);
+}
+.style-terminal .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-terminal .toggle-slider {
+    background-color: #000000;
+    border: 2px solid #22c55e;
+    border-radius: 0px;
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
+}
+.style-terminal .toggle-slider:before {
+    background-color: #22c55e;
+    border-radius: 0px;
+    box-shadow: 0 0 8px #22c55e;
+    width: 18px;
+    height: 18px;
+    left: 4px;
+    bottom: 4px;
+}
+.style-terminal .demo-toggle input:checked + .toggle-slider {
+    background-color: #22c55e;
+}
+.style-terminal .demo-toggle input:checked + .toggle-slider:before {
+    background-color: #000000;
+}
+
+.style-terminal .demo-input {
+    background: #000000;
+    border: 2px solid #22c55e;
+    color: #22c55e;
+    border-radius: 0px;
+    font-family: var(--font-mono);
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.3);
+}
+.style-terminal .demo-input:focus {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.7);
+    outline: none;
+}
+
+.style-terminal .demo-slider {
+    background: #000000;
+    border: 1px solid #22c55e;
+    border-radius: 0px;
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.4);
+}
+.style-terminal .demo-slider::-webkit-slider-thumb {
+    background: #22c55e;
+    border-radius: 0px;
+    width: 16px;
+    height: 24px;
+    box-shadow: 0 0 12px #22c55e;
+}
+
+/* ==========================================================================
+   2. PIXEL ART / GAME UI (.style-pixel)
+   ========================================================================== */
+.style-pixel {
+    background-color: #3b0764;
+}
+
+.style-pixel .demo-card {
+    background: #2563eb;
+    border: 4px solid #000000;
+    border-radius: 0px;
+    box-shadow: 8px 8px 0px #000000;
+    color: #ffffff;
+    font-family: 'Press Start 2P', var(--font-mono);
+    padding: 36px 30px;
+}
+
+.style-pixel .card-title {
+    color: #facc15;
+    font-family: 'Press Start 2P', var(--font-mono);
+    font-size: 16px;
+    text-shadow: 3px 3px 0px #000000;
+    line-height: 1.4;
+}
+
+.style-pixel .card-badge {
+    background: #ef4444;
+    color: white;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    box-shadow: 2px 2px 0px #000000;
+    font-family: 'Press Start 2P', var(--font-mono);
+    font-size: 9px;
+    padding: 6px 10px;
+}
+
+.style-pixel .card-desc {
+    color: #ffffff;
+    font-family: var(--font-sans);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.6;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 14px;
+    border: 2px solid #000000;
+}
+
+.style-pixel .widget-label {
+    color: #facc15;
+    font-family: 'Press Start 2P', var(--font-mono);
+    font-size: 10px;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.style-pixel .demo-btn {
+    background: #facc15;
+    color: #000000;
+    border: 4px solid #000000;
+    border-radius: 0px;
+    box-shadow: 4px 4px 0px #000000;
+    font-family: 'Press Start 2P', var(--font-mono);
+    font-size: 12px;
+    padding: 16px 20px;
+}
+.style-pixel .demo-btn:hover {
+    background: #eab308;
+}
+.style-pixel .demo-btn:active {
+    box-shadow: 2px 2px 0px #000000;
+    transform: translate(2px, 2px);
+}
+
+.style-pixel .toggle-slider {
+    background-color: #ef4444;
+    border: 4px solid #000000;
+    border-radius: 0px;
+    box-shadow: 3px 3px 0px #000;
+}
+.style-pixel .toggle-slider:before {
+    background-color: #ffffff;
+    border-radius: 0px;
+    border: 2px solid #000;
+    width: 16px; height: 16px;
+    left: 4px; bottom: 3px;
+}
+.style-pixel .demo-toggle input:checked + .toggle-slider {
+    background-color: #22c55e;
+}
+
+.style-pixel .demo-input {
+    background: #ffffff;
+    border: 4px solid #000000;
+    color: #000000;
+    border-radius: 0px;
+    font-family: 'Press Start 2P', var(--font-mono);
+    font-size: 11px;
+    box-shadow: 4px 4px 0px #000000;
+    padding: 14px;
+}
+.style-pixel .demo-input:focus {
+    background: #fef08a;
+}
+
+.style-pixel .demo-slider {
+    background: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 0px;
+    height: 14px;
+    box-shadow: 3px 3px 0px #000000;
+}
+.style-pixel .demo-slider::-webkit-slider-thumb {
+    background: #facc15;
+    border: 3px solid #000000;
+    border-radius: 0px;
+    width: 20px;
+    height: 26px;
+}
+
+/* ==========================================================================
+   3. DASHBOARD / DATA VIZ (.style-dashboard)
+   ========================================================================== */
+.style-dashboard {
+    background-color: #0f172a;
+}
+
+.style-dashboard .demo-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: #f8fafc;
+}
+
+.style-dashboard .card-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.style-dashboard .card-title::after {
+    content: "LIVE KPI";
+    font-size: 10px;
+    background: #047857;
+    color: #a7f3d0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.style-dashboard .card-badge {
+    background: #0284c7;
+    color: white;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.style-dashboard .card-desc {
+    color: #94a3b8;
+    font-size: 14px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 20px;
+}
+
+.style-dashboard .widget-label {
+    color: #94a3b8;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.style-dashboard .demo-btn {
+    background: #0284c7;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(2, 132, 199, 0.2);
+}
+.style-dashboard .demo-btn:hover {
+    background: #0369a1;
+}
+.style-dashboard .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-dashboard .toggle-slider {
+    background-color: #334155;
+    border-radius: 100px;
+}
+.style-dashboard .toggle-slider:before {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.style-dashboard .demo-toggle input:checked + .toggle-slider {
+    background-color: #0284c7;
+}
+
+.style-dashboard .demo-input {
+    background: #0f172a;
+    border: 1px solid #334155;
+    color: #f8fafc;
+    border-radius: 6px;
+    font-size: 13px;
+}
+.style-dashboard .demo-input:focus {
+    border-color: #0284c7;
+    background: #1e293b;
+}
+
+.style-dashboard .demo-slider {
+    background: #334155;
+    height: 6px;
+    border-radius: 100px;
+}
+.style-dashboard .demo-slider::-webkit-slider-thumb {
+    background: #0284c7;
+    box-shadow: 0 2px 6px rgba(2, 132, 199, 0.4);
+}
+
+/* ==========================================================================
+   4. E-COMMERCE (.style-ecommerce)
+   ========================================================================== */
+.style-ecommerce {
+    background-color: #f8fafc;
+}
+
+.style-ecommerce .demo-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    color: #0f172a;
+    position: relative;
+    overflow: hidden;
+}
+.style-ecommerce .demo-card::before {
+    content: "🔥 High Demand";
+    position: absolute;
+    top: 12px; right: 12px;
+    background: #fef3c7;
+    color: #d97706;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 100px;
+    border: 1px solid #fde68a;
+}
+
+.style-ecommerce .card-title {
+    color: #0f172a;
+    font-weight: 800;
+    font-size: 22px;
+}
+
+.style-ecommerce .card-badge {
+    background: #ea580c;
+    color: white;
+    border-radius: 4px;
+    font-weight: 700;
+    box-shadow: 0 2px 6px rgba(234, 88, 12, 0.3);
+}
+
+.style-ecommerce .card-desc {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.style-ecommerce .widget-label {
+    color: #475569;
+    font-weight: 700;
+}
+
+.style-ecommerce .demo-btn {
+    background: #ea580c;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 14px;
+    padding: 16px 24px;
+}
+.style-ecommerce .demo-btn:hover {
+    background: #c2410c;
+    box-shadow: 0 6px 16px rgba(194, 65, 12, 0.4);
+}
+.style-ecommerce .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-ecommerce .toggle-slider {
+    background-color: #cbd5e1;
+    border-radius: 100px;
+}
+.style-ecommerce .toggle-slider:before {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.style-ecommerce .demo-toggle input:checked + .toggle-slider {
+    background-color: #ea580c;
+}
+
+.style-ecommerce .demo-input {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+    color: #0f172a;
+    border-radius: 8px;
+}
+.style-ecommerce .demo-input:focus {
+    border-color: #ea580c;
+    box-shadow: 0 0 10px rgba(234, 88, 12, 0.15);
+}
+
+.style-ecommerce .demo-slider {
+    background: #e2e8f0;
+    height: 8px;
+    border-radius: 100px;
+}
+.style-ecommerce .demo-slider::-webkit-slider-thumb {
+    background: #f97316;
+    box-shadow: 0 2px 6px rgba(249, 115, 22, 0.4);
+}
+
+/* ==========================================================================
+   5. TYPOGRAPHY-CENTRIC UI (.style-typography)
+   ========================================================================== */
+.style-typography {
+    background-color: #fcfaf7;
+}
+
+.style-typography .demo-card {
+    background: #ffffff;
+    border: none;
+    border-bottom: 3px solid #111111;
+    border-radius: 0px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.04);
+    color: #111111;
+    padding: 40px 32px;
+}
+
+.style-typography .card-title {
+    color: #111111;
+    font-family: var(--font-heading), 'Times New Roman', serif;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+.style-typography .card-badge {
+    background: transparent;
+    color: #111111;
+    border: 1px solid #111111;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: none;
+}
+
+.style-typography .card-desc {
+    color: #444444;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.style-typography .widget-label {
+    color: #444444;
+    font-family: var(--font-sans);
+    font-size: 14px;
+}
+
+.style-typography .demo-btn {
+    background: #111111;
+    color: #ffffff;
+    border: none;
+    border-radius: 0px;
+    font-family: var(--font-heading);
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    padding: 16px 28px;
+    transition: all 0.25s ease;
+    box-shadow: none;
+}
+.style-typography .demo-btn:hover {
+    background: #333333;
+    transform: translateY(-2px);
+}
+.style-typography .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-typography .toggle-slider {
+    background-color: #e2e8f0;
+    border-radius: 0px;
+}
+.style-typography .toggle-slider:before {
+    background-color: #111111;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.style-typography .demo-toggle input:checked + .toggle-slider {
+    background-color: #111111;
+}
+.style-typography .demo-toggle input:checked + .toggle-slider:before {
+    background-color: #ffffff;
+}
+
+.style-typography .demo-input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #111111;
+    color: #111111;
+    border-radius: 0px;
+    font-family: var(--font-mono);
+    padding: 12px 0;
+    box-shadow: none;
+}
+.style-typography .demo-input:focus {
+    border-bottom-width: 4px;
+    box-shadow: none;
+}
+
+.style-typography .demo-slider {
+    background: #e2e8f0;
+    height: 4px;
+    border-radius: 0px;
+}
+.style-typography .demo-slider::-webkit-slider-thumb {
+    background: #111111;
+    border-radius: 0px;
+    width: 16px;
+    height: 16px;
+    box-shadow: none;
+}
+
+/* ==========================================================================
+   6. ILLUSTRATION-BASED UI (.style-illustration)
+   ========================================================================== */
+.style-illustration {
+    background-color: #fffbeb;
+}
+
+.style-illustration .demo-card {
+    background: #ffffff;
+    border: 3px solid #78350f;
+    border-radius: 32px;
+    box-shadow: 8px 8px 0px #f59e0b;
+    color: #78350f;
+}
+
+.style-illustration .card-title {
+    color: #78350f;
+    font-weight: 800;
+    font-family: var(--font-heading);
+}
+
+.style-illustration .card-badge {
+    background: #f59e0b;
+    color: #ffffff;
+    border: 2px solid #78350f;
+    border-radius: 100px;
+    font-weight: 800;
+    box-shadow: 2px 2px 0px #78350f;
+}
+
+.style-illustration .card-desc {
+    color: #92400e;
+    font-weight: 600;
+}
+
+.style-illustration .widget-label {
+    color: #92400e;
+    font-weight: 600;
+}
+
+.style-illustration .demo-btn {
+    background: #f59e0b;
+    color: white;
+    border: 3px solid #78350f;
+    border-radius: 20px;
+    font-weight: 800;
+    box-shadow: 4px 4px 0px #78350f;
+    transition: all 0.2s ease;
+}
+.style-illustration .demo-btn:hover {
+    background: #fbbf24;
+    transform: translateY(-2px);
+    box-shadow: 4px 6px 0px #78350f;
+}
+.style-illustration .demo-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #78350f;
+}
+
+.style-illustration .toggle-slider {
+    background: #fde68a;
+    border: 3px solid #78350f;
+    border-radius: 30px;
+}
+.style-illustration .toggle-slider:before {
+    background: #ffffff;
+    border: 2px solid #78350f;
+}
+.style-illustration .demo-toggle input:checked + .toggle-slider {
+    background: #10b981;
+}
+
+.style-illustration .demo-input {
+    background: #ffffff;
+    border: 3px solid #78350f;
+    color: #78350f;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 0px rgba(120,53,15,0.2);
+    font-weight: 600;
+}
+.style-illustration .demo-input:focus {
+    background: #fef3c7;
+}
+
+.style-illustration .demo-slider {
+    background: #fde68a;
+    border: 2px solid #78350f;
+    height: 16px;
+    border-radius: 10px;
+}
+.style-illustration .demo-slider::-webkit-slider-thumb {
+    background: #f59e0b;
+    border: 2px solid #78350f;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+/* ==========================================================================
+   7. MICRO-INTERACTION UI (.style-microinteraction)
+   ========================================================================== */
+.style-microinteraction {
+    background-color: #f1f5f9;
+}
+
+.style-microinteraction .demo-card {
+    background: #ffffff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    color: #0f172a;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.style-microinteraction .demo-card:hover {
+    box-shadow: 0 20px 40px rgba(99,102,241,0.15);
+    transform: translateY(-4px);
+}
+
+.style-microinteraction .card-title {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.style-microinteraction .card-badge {
+    background: #e0e7ff;
+    color: #6366f1;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+.style-microinteraction .demo-card:hover .card-badge {
+    background: #6366f1;
+    color: white;
+    transform: scale(1.05);
+}
+
+.style-microinteraction .card-desc {
+    color: #64748b;
+}
+
+.style-microinteraction .widget-label {
+    color: #64748b;
+}
+
+.style-microinteraction .demo-btn {
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(99,102,241,0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+.style-microinteraction .demo-btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(99,102,241,0.5);
+}
+.style-microinteraction .demo-btn:active {
+    transform: scale(0.95);
+}
+
+.style-microinteraction .toggle-slider {
+    background-color: #e2e8f0;
+}
+.style-microinteraction .demo-toggle input:checked + .toggle-slider {
+    background-color: #6366f1;
+    box-shadow: 0 0 15px rgba(99,102,241,0.4);
+}
+
+.style-microinteraction .demo-input {
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    color: #0f172a;
+    border-radius: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.style-microinteraction .demo-input:focus {
+    border-color: #6366f1;
+    background: #ffffff;
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(99,102,241,0.15);
+}
+
+.style-microinteraction .demo-slider {
+    background: #e2e8f0;
+}
+.style-microinteraction .demo-slider::-webkit-slider-thumb {
+    background: #6366f1;
+    box-shadow: 0 0 10px rgba(99,102,241,0.5);
+    transition: transform 0.2s ease;
+}
+.style-microinteraction .demo-slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+}
+
+/* ==========================================================================
+   8. CARD-BASED UI (.style-cardbased)
+   ========================================================================== */
+.style-cardbased {
+    background-color: #e2e8f0;
+}
+
+.style-cardbased .demo-card {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    color: #1e293b;
+}
+
+.style-cardbased .card-title {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.style-cardbased .card-badge {
+    background: #f1f5f9;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: none;
+}
+
+.style-cardbased .card-desc {
+    color: #64748b;
+}
+
+.style-cardbased .widget-label {
+    color: #64748b;
+}
+
+.style-cardbased .demo-btn {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(59,130,246,0.3);
+}
+.style-cardbased .demo-btn:hover {
+    background: #2563eb;
+    box-shadow: 0 4px 12px rgba(59,130,246,0.4);
+}
+.style-cardbased .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-cardbased .toggle-slider {
+    background-color: #cbd5e1;
+}
+.style-cardbased .demo-toggle input:checked + .toggle-slider {
+    background-color: #3b82f6;
+}
+
+.style-cardbased .demo-input {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
+    border-radius: 8px;
+}
+.style-cardbased .demo-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+}
+
+.style-cardbased .demo-slider {
+    background: #cbd5e1;
+}
+.style-cardbased .demo-slider::-webkit-slider-thumb {
+    background: #3b82f6;
+    box-shadow: 0 2px 4px rgba(59,130,246,0.4);
+}
+
+/* ==========================================================================
+   9. IMMERSIVE STORYTELLING UI (.style-storytelling)
+   ========================================================================== */
+.style-storytelling {
+    background-color: #0c0a09;
+}
+
+.style-storytelling .demo-card {
+    background: rgba(28, 25, 23, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(214, 190, 152, 0.2);
+    border-radius: 24px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    color: #f5f5f4;
+}
+
+.style-storytelling .card-title {
+    color: #d6be98;
+    font-family: serif;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.style-storytelling .card-badge {
+    background: rgba(214, 190, 152, 0.1);
+    color: #d6be98;
+    border: 1px solid rgba(214, 190, 152, 0.3);
+    border-radius: 100px;
+    font-family: serif;
+    font-style: italic;
+    box-shadow: none;
+}
+
+.style-storytelling .card-desc {
+    color: #a8a29e;
+    font-family: serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.style-storytelling .widget-label {
+    color: #a8a29e;
+    font-family: serif;
+    font-size: 14px;
+}
+
+.style-storytelling .demo-btn {
+    background: #d6be98;
+    color: #0c0a09;
+    border: none;
+    border-radius: 100px;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    letter-spacing: 1px;
+    box-shadow: 0 8px 25px rgba(214,190,152,0.4);
+    transition: all 0.4s ease;
+}
+.style-storytelling .demo-btn:hover {
+    background: #e7d4b5;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(214,190,152,0.6);
+}
+.style-storytelling .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-storytelling .toggle-slider {
+    background: #292524;
+    border: 1px solid #d6be98;
+}
+.style-storytelling .toggle-slider:before {
+    background: #d6be98;
+}
+.style-storytelling .demo-toggle input:checked + .toggle-slider {
+    background: #d6be98;
+}
+.style-storytelling .demo-toggle input:checked + .toggle-slider:before {
+    background: #0c0a09;
+}
+
+.style-storytelling .demo-input {
+    background: #1c1917;
+    border: 1px solid rgba(214,190,152,0.3);
+    color: #f5f5f4;
+    border-radius: 16px;
+    font-family: serif;
+}
+.style-storytelling .demo-input:focus {
+    border-color: #d6be98;
+    box-shadow: 0 0 15px rgba(214,190,152,0.3);
+}
+
+.style-storytelling .demo-slider {
+    background: #292524;
+    border: 1px solid #d6be98;
+}
+.style-storytelling .demo-slider::-webkit-slider-thumb {
+    background: #d6be98;
+    box-shadow: 0 0 15px rgba(214,190,152,0.5);
+}
+
+/* ==========================================================================
+   10. ECO / SUSTAINABILITY UI (.style-eco)
+   ========================================================================== */
+.style-eco {
+    background-color: #f0fdf4;
+}
+
+.style-eco .demo-card {
+    background: #ffffff;
+    border: 2px solid #bbf7d0;
+    border-radius: 28px;
+    box-shadow: 0 12px 35px rgba(22,101,52,0.08);
+    color: #166534;
+}
+
+.style-eco .card-title {
+    color: #15803d;
+    font-weight: 800;
+}
+
+.style-eco .card-badge {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+    border-radius: 100px;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+.style-eco .card-desc {
+    color: #166534;
+    font-weight: 500;
+}
+
+.style-eco .widget-label {
+    color: #166534;
+    font-weight: 600;
+}
+
+.style-eco .demo-btn {
+    background: #16a34a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(22,163,74,0.3);
+    transition: all 0.3s ease;
+}
+.style-eco .demo-btn:hover {
+    background: #15803d;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(21,128,61,0.4);
+}
+.style-eco .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-eco .toggle-slider {
+    background: #dcfce7;
+    border: 1px solid #86efac;
+}
+.style-eco .toggle-slider:before {
+    background: white;
+    box-shadow: 0 2px 4px rgba(22,101,52,0.2);
+}
+.style-eco .demo-toggle input:checked + .toggle-slider {
+    background: #16a34a;
+}
+
+.style-eco .demo-input {
+    background: #ffffff;
+    border: 2px solid #bbf7d0;
+    color: #166534;
+    border-radius: 16px;
+}
+.style-eco .demo-input:focus {
+    border-color: #16a34a;
+    box-shadow: 0 0 15px rgba(22,163,74,0.2);
+}
+
+.style-eco .demo-slider {
+    background: #dcfce7;
+    border: 1px solid #86efac;
+}
+.style-eco .demo-slider::-webkit-slider-thumb {
+    background: #16a34a;
+    box-shadow: 0 0 10px rgba(22,163,74,0.4);
+}
+
+/* ==========================================================================
+   11. PLAYFUL UI (.style-playful)
+   ========================================================================== */
+.style-playful {
+    background-color: #fdf2f8;
+}
+
+.style-playful .demo-card {
+    background: #ffffff;
+    border: 4px solid #db2777;
+    border-radius: 35px;
+    box-shadow: 10px 10px 0px #f472b6;
+    color: #831843;
+}
+
+.style-playful .card-title {
+    color: #db2777;
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.style-playful .card-badge {
+    background: #fce7f3;
+    color: #db2777;
+    border: 2px solid #db2777;
+    border-radius: 15px;
+    font-weight: 800;
+    box-shadow: none;
+}
+
+.style-playful .card-desc {
+    color: #9d174d;
+    font-weight: 600;
+}
+
+.style-playful .widget-label {
+    color: #9d174d;
+    font-weight: 700;
+}
+
+.style-playful .demo-btn {
+    background: #db2777;
+    color: white;
+    border: 3px solid #831843;
+    border-radius: 25px;
+    font-weight: 900;
+    box-shadow: 6px 6px 0px #831843;
+    transition: all 0.2s ease;
+}
+.style-playful .demo-btn:hover {
+    background: #be185d;
+    transform: translate(-2px, -2px);
+    box-shadow: 8px 8px 0px #831843;
+}
+.style-playful .demo-btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #831843;
+}
+
+.style-playful .toggle-slider {
+    background: #fce7f3;
+    border: 3px solid #db2777;
+    border-radius: 30px;
+}
+.style-playful .toggle-slider:before {
+    background: white;
+    border: 2px solid #db2777;
+}
+.style-playful .demo-toggle input:checked + .toggle-slider {
+    background: #db2777;
+}
+
+.style-playful .demo-input {
+    background: #ffffff;
+    border: 3px solid #db2777;
+    color: #831843;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.style-playful .demo-input:focus {
+    background: #fdf2f8;
+    box-shadow: 6px 6px 0px #f472b6;
+}
+
+.style-playful .demo-slider {
+    background: #fce7f3;
+    border: 2px solid #db2777;
+    height: 16px;
+    border-radius: 10px;
+}
+.style-playful .demo-slider::-webkit-slider-thumb {
+    background: #db2777;
+    border: 2px solid #831843;
+    box-shadow: 4px 4px 0px #831843;
+    width: 24px;
+    height: 24px;
+}
+
+/* ==========================================================================
+   12. SPLIT SCREEN UI (.style-splitscreen)
+   ========================================================================== */
+.style-splitscreen {
+    background: linear-gradient(90deg, #1e293b 50%, #f8fafc 50%);
+}
+
+.style-splitscreen .demo-card {
+    background: #ffffff;
+    border: 2px solid #0f172a;
+    border-radius: 0px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    color: #0f172a;
+}
+
+.style-splitscreen .card-title {
+    color: #0f172a;
+    font-weight: 800;
+}
+
+.style-splitscreen .card-badge {
+    background: #0f172a;
+    color: #ffffff;
+    border-radius: 0px;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+.style-splitscreen .card-desc {
+    color: #475569;
+}
+
+.style-splitscreen .widget-label {
+    color: #475569;
+}
+
+.style-splitscreen .demo-btn {
+    background: #0f172a;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    font-weight: 700;
+    box-shadow: 0 10px 25px rgba(15,23,42,0.3);
+    transition: all 0.25s ease;
+}
+.style-splitscreen .demo-btn:hover {
+    background: #334155;
+    transform: translateY(-2px);
+}
+.style-splitscreen .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-splitscreen .toggle-slider {
+    background-color: #cbd5e1;
+    border-radius: 0px;
+}
+.style-splitscreen .toggle-slider:before {
+    background-color: #ffffff;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.style-splitscreen .demo-toggle input:checked + .toggle-slider {
+    background-color: #0f172a;
+}
+
+.style-splitscreen .demo-input {
+    background: #f8fafc;
+    border: 1px solid #94a3b8;
+    color: #0f172a;
+    border-radius: 0px;
+}
+.style-splitscreen .demo-input:focus {
+    border-color: #0f172a;
+    background: #ffffff;
+}
+
+.style-splitscreen .demo-slider {
+    background: #cbd5e1;
+    border-radius: 0px;
+}
+.style-splitscreen .demo-slider::-webkit-slider-thumb {
+    background: #0f172a;
+    border-radius: 0px;
+    width: 18px;
+    height: 22px;
+}
+
+/* ==========================================================================
+   13. MAGAZINE / EDITORIAL (.style-magazine)
+   ========================================================================== */
+.style-magazine {
+    background-color: #fdfbf7;
+}
+
+.style-magazine .demo-card {
+    background: #ffffff;
+    border: 1px solid #e7e5e0;
+    border-radius: 0px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+    color: #1c1b1a;
+    padding: 48px 40px;
+}
+
+.style-magazine .card-title {
+    color: #1c1b1a;
+    font-family: 'Georgia', serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 2px solid #1c1b1a;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.style-magazine .card-badge {
+    background: #1c1b1a;
+    color: #fdfbf7;
+    border-radius: 0px;
+    font-family: var(--font-sans);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: none;
+}
+
+.style-magazine .card-desc {
+    color: #555555;
+    font-family: 'Georgia', serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.style-magazine .widget-label {
+    color: #555555;
+    font-family: 'Georgia', serif;
+    font-size: 14px;
+}
+
+.style-magazine .demo-btn {
+    background: #1c1b1a;
+    color: #fdfbf7;
+    border: none;
+    border-radius: 0px;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 16px 28px;
+    box-shadow: none;
+    transition: all 0.3s ease;
+}
+.style-magazine .demo-btn:hover {
+    background: #b91c1c;
+    color: white;
+}
+.style-magazine .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-magazine .toggle-slider {
+    background-color: #e7e5e0;
+    border-radius: 0px;
+}
+.style-magazine .toggle-slider:before {
+    background-color: #1c1b1a;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.style-magazine .demo-toggle input:checked + .toggle-slider {
+    background-color: #b91c1c;
+}
+.style-magazine .demo-toggle input:checked + .toggle-slider:before {
+    background-color: #ffffff;
+}
+
+.style-magazine .demo-input {
+    background: transparent;
+    border: 1px solid #cccccc;
+    color: #1c1b1a;
+    border-radius: 0px;
+    font-family: 'Georgia', serif;
+}
+.style-magazine .demo-input:focus {
+    border-color: #1c1b1a;
+}
+
+.style-magazine .demo-slider {
+    background: #e7e5e0;
+    border-radius: 0px;
+    height: 4px;
+}
+.style-magazine .demo-slider::-webkit-slider-thumb {
+    background: #1c1b1a;
+    border-radius: 0px;
+    width: 14px;
+    height: 20px;
+    box-shadow: none;
+}
+
+/* ==========================================================================
+   14. TIMELINE / JOURNEY UI (.style-timeline)
+   ========================================================================== */
+.style-timeline {
+    background-color: #f8fafc;
+}
+
+.style-timeline .demo-card {
+    background: #ffffff;
+    border: none;
+    border-left: 4px solid #6366f1;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    color: #1e293b;
+    position: relative;
+    padding: 36px 36px 36px 48px;
+}
+.style-timeline .demo-card:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 40px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #6366f1;
+    border: 4px solid #ffffff;
+    box-shadow: 0 0 10px rgba(99,102,241,0.5);
+}
+
+.style-timeline .card-title {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.style-timeline .card-badge {
+    background: #e0e7ff;
+    color: #6366f1;
+    border-radius: 100px;
+    font-weight: 700;
+    box-shadow: none;
+}
+
+.style-timeline .card-desc {
+    color: #64748b;
+}
+
+.style-timeline .widget-label {
+    color: #64748b;
+}
+
+.style-timeline .demo-btn {
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(99,102,241,0.3);
+    transition: all 0.3s ease;
+}
+.style-timeline .demo-btn:hover {
+    background: #4f46e5;
+    transform: translateX(4px);
+    box-shadow: 0 6px 20px rgba(99,102,241,0.4);
+}
+.style-timeline .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-timeline .toggle-slider {
+    background-color: #cbd5e1;
+}
+.style-timeline .demo-toggle input:checked + .toggle-slider {
+    background-color: #6366f1;
+}
+
+.style-timeline .demo-input {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
+    border-radius: 100px;
+    padding: 14px 24px;
+}
+.style-timeline .demo-input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+
+.style-timeline .demo-slider {
+    background: #cbd5e1;
+}
+.style-timeline .demo-slider::-webkit-slider-thumb {
+    background: #6366f1;
+    box-shadow: 0 2px 6px rgba(99,102,241,0.4);
+}
+
+/* ==========================================================================
+   15. GAMIFIED UI (.style-gamified)
+   ========================================================================== */
+.style-gamified {
+    background-color: #0f172a;
+}
+
+.style-gamified .demo-card {
+    background: #1e293b;
+    border: 3px solid #3b82f6;
+    border-radius: 24px;
+    box-shadow: 0 12px 0px #1d4ed8, 0 20px 40px rgba(0,0,0,0.5);
+    color: #f8fafc;
+}
+
+.style-gamified .card-title {
+    color: #60a5fa;
+    font-weight: 900;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.style-gamified .card-badge {
+    background: #f59e0b;
+    color: #0f172a;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    font-weight: 900;
+    box-shadow: 0 4px 0px #b45309;
+}
+
+.style-gamified .card-desc {
+    color: #94a3b8;
+    font-weight: 700;
+}
+
+.style-gamified .widget-label {
+    color: #94a3b8;
+    font-weight: 700;
+}
+
+.style-gamified .demo-btn {
+    background: #22c55e;
+    color: white;
+    border: 3px solid #ffffff;
+    border-radius: 16px;
+    font-weight: 900;
+    font-size: 16px;
+    box-shadow: 0 8px 0px #15803d;
+    transition: all 0.1s ease;
+}
+.style-gamified .demo-btn:hover {
+    background: #16a34a;
+    transform: translateY(2px);
+    box-shadow: 0 6px 0px #15803d;
+}
+.style-gamified .demo-btn:active {
+    transform: translateY(8px);
+    box-shadow: 0 0px 0px #15803d;
+}
+
+.style-gamified .toggle-slider {
+    background: #334155;
+    border: 3px solid #64748b;
+    border-radius: 30px;
+    box-shadow: inset 0 4px 0px rgba(0,0,0,0.3);
+}
+.style-gamified .toggle-slider:before {
+    background: #ffffff;
+    border: 2px solid #334155;
+    box-shadow: 0 4px 0px #334155;
+}
+.style-gamified .demo-toggle input:checked + .toggle-slider {
+    background: #22c55e;
+    border-color: #ffffff;
+}
+
+.style-gamified .demo-input {
+    background: #090d16;
+    border: 3px solid #3b82f6;
+    color: #60a5fa;
+    border-radius: 16px;
+    box-shadow: inset 0 4px 0px rgba(0,0,0,0.5);
+    font-weight: 700;
+}
+.style-gamified .demo-input:focus {
+    border-color: #f59e0b;
+    box-shadow: inset 0 4px 0px rgba(0,0,0,0.5), 0 0 15px rgba(245,158,11,0.5);
+}
+
+.style-gamified .demo-slider {
+    background: #334155;
+    border: 3px solid #64748b;
+    border-radius: 12px;
+    height: 16px;
+    box-shadow: inset 0 4px 0px rgba(0,0,0,0.3);
+}
+.style-gamified .demo-slider::-webkit-slider-thumb {
+    background: #f59e0b;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 4px 0px #b45309;
+    width: 28px;
+    height: 28px;
+}

@@ -1,0 +1,810 @@
+/* ==========================================================================
+   CLASSIC FOUNDATIONS STYLESHEET
+   1. Flat Design (.style-flat)
+   2. Skeuomorphic (.style-skeuomorphic)
+   3. Material Design (.style-material)
+   4. Minimalist (.style-minimalist)
+   5. Metro / Flat 2.0 (.style-metro)
+   ========================================================================== */
+
+/* ==========================================================================
+   FULL-PAGE IMMERSION OVERRIDES (CLASSIC FOUNDATIONS)
+   ========================================================================== */
+body.style-flat {
+    --bg-main: #f8fafc;
+    --bg-surface: #ffffff;
+    --text-main: #0f172a;
+    --text-muted: #64748b;
+    --border-color: #cbd5e1;
+    --accent-color: #3b82f6;
+}
+body.style-flat .aurora-bg { display: none; }
+
+body.style-skeuomorphic {
+    --bg-main: #2a2a2a;
+    --bg-surface: linear-gradient(180deg, #3a3a3a 0%, #2a2a2a 100%);
+    --text-main: #f3f3f3;
+    --border-color: #4a4a4a;
+    --accent-color: #e0a800;
+}
+body.style-skeuomorphic .aurora-bg { display: none; }
+
+body.style-material {
+    --bg-main: #121212;
+    --bg-surface: #1e1e1e;
+    --text-main: #ffffff;
+    --border-color: rgba(255, 255, 255, 0.12);
+    --accent-color: #bb86fc;
+}
+body.style-material .aurora-bg { display: none; }
+
+body.style-minimalist {
+    --bg-main: #ffffff;
+    --bg-surface: #ffffff;
+    --text-main: #000000;
+    --text-muted: #777777;
+    --border-color: #eeeeee;
+    --accent-color: #000000;
+}
+body.style-minimalist .aurora-bg { display: none; }
+
+body.style-metro {
+    --bg-main: #111111;
+    --bg-surface: #1d1d1d;
+    --text-main: #ffffff;
+    --border-color: #333333;
+    --accent-color: #0078d7;
+}
+body.style-metro .aurora-bg { display: none; }
+
+body.style-skeuominimalism {
+    --bg-main: #f0f2f5;
+    --bg-surface: #ffffff;
+    --text-main: #1a1a1a;
+    --text-muted: #6b7280;
+    --border-color: #e5e7eb;
+    --accent-color: #4f46e5;
+}
+body.style-skeuominimalism .aurora-bg { display: none; }
+
+body.style-lineart {
+    --bg-main: #ffffff;
+    --bg-surface: #ffffff;
+    --text-main: #000000;
+    --text-muted: #666666;
+    --border-color: #000000;
+    --accent-color: #000000;
+}
+body.style-lineart .aurora-bg { display: none; }
+
+body.style-corporate {
+    --bg-main: #0b1329;
+    --bg-surface: #131d38;
+    --text-main: #f8fafc;
+    --border-color: #253359;
+    --accent-color: #0284c7;
+}
+body.style-corporate .aurora-bg { display: none; }
+
+/* ==========================================================================
+   1. FLAT DESIGN (.style-flat)
+   ========================================================================== */
+.style-flat {
+    background-color: #f1f5f9;
+}
+
+.style-flat .demo-card {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #334155;
+}
+
+.style-flat .card-title {
+    color: #0f172a;
+    font-family: var(--font-sans);
+    font-weight: 700;
+}
+
+.style-flat .card-badge {
+    background: #3b82f6;
+    color: white;
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.style-flat .card-desc {
+    color: #64748b;
+}
+
+.style-flat .demo-btn {
+    background: #3b82f6;
+    color: white;
+    border-radius: 4px;
+    box-shadow: none;
+    border: none;
+}
+.style-flat .demo-btn:hover {
+    background: #2563eb;
+}
+.style-flat .demo-btn:active {
+    background: #1d4ed8;
+}
+
+.style-flat .toggle-slider {
+    background-color: #cbd5e1;
+    border-radius: 4px;
+}
+.style-flat .toggle-slider:before {
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.style-flat .demo-toggle input:checked + .toggle-slider {
+    background-color: #3b82f6;
+}
+
+.style-flat .demo-input {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
+    border-radius: 4px;
+    box-shadow: none;
+}
+.style-flat .demo-input:focus {
+    border-color: #3b82f6;
+}
+
+.style-flat .demo-slider {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+.style-flat .demo-slider::-webkit-slider-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   2. SKEUOMORPHIC (.style-skeuomorphic)
+   ========================================================================== */
+.style-skeuomorphic {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    position: relative;
+}
+
+.style-skeuomorphic .demo-card {
+    background: linear-gradient(to bottom, #f8fafc, #e2e8f0);
+    border: 1px solid #94a3b8;
+    border-radius: 16px;
+    box-shadow: inset 0 1px 0 #ffffff, 0 10px 25px rgba(0, 0, 0, 0.5);
+    color: #1e293b;
+}
+
+.style-skeuomorphic .card-title {
+    color: #0f172a;
+    font-family: var(--font-sans);
+    text-shadow: 0 1px 1px #ffffff;
+}
+
+.style-skeuomorphic .card-badge {
+    background: linear-gradient(to bottom, #ef4444, #b91c1c);
+    color: white;
+    border-radius: 12px;
+    border: 1px solid #991b1b;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4), 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.style-skeuomorphic .card-desc {
+    color: #475569;
+    text-shadow: 0 1px 1px #ffffff;
+}
+
+.style-skeuomorphic .demo-btn {
+    background: linear-gradient(to bottom, #60a5fa, #2563eb);
+    border: 1px solid #1d4ed8;
+    border-radius: 24px;
+    color: white;
+    font-weight: 700;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5), 0 4px 8px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+}
+.style-skeuomorphic .demo-btn:hover {
+    background: linear-gradient(to bottom, #3b82f6, #1d4ed8);
+}
+.style-skeuomorphic .demo-btn:active {
+    background: linear-gradient(to bottom, #1d4ed8, #1e40af);
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.6);
+    transform: translateY(2px);
+}
+
+.style-skeuomorphic .toggle-slider {
+    background: #64748b;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5), 0 1px 1px rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+}
+.style-skeuomorphic .toggle-slider:before {
+    background: linear-gradient(to bottom, #ffffff, #cbd5e1);
+    box-shadow: inset 0 1px 1px white, 0 2px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+.style-skeuomorphic .demo-toggle input:checked + .toggle-slider {
+    background: #2563eb;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.6), 0 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.style-skeuomorphic .demo-input {
+    background: #ffffff;
+    border: 1px solid #94a3b8;
+    color: #0f172a;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.15), 0 1px 1px #ffffff;
+}
+.style-skeuomorphic .demo-input:focus {
+    border-color: #2563eb;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.15), 0 0 8px rgba(37, 99, 235, 0.4);
+}
+
+.style-skeuomorphic .demo-slider {
+    background: #64748b;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5), 0 1px 1px rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+}
+.style-skeuomorphic .demo-slider::-webkit-slider-thumb {
+    background: linear-gradient(to bottom, #ffffff, #cbd5e1);
+    box-shadow: inset 0 1px 1px white, 0 2px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+/* ==========================================================================
+   3. MATERIAL DESIGN (.style-material)
+   ========================================================================== */
+.style-material {
+    background-color: #e2e8f0;
+}
+
+.style-material .demo-card {
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    color: #1e293b;
+    transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.style-material .demo-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.style-material .card-title {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.style-material .card-badge {
+    background: #6200ea;
+    color: white;
+    border-radius: 100px;
+    padding: 4px 12px;
+    box-shadow: 0 2px 4px rgba(98, 0, 234, 0.3);
+}
+
+.style-material .card-desc {
+    color: #64748b;
+}
+
+.style-material .demo-btn {
+    background: #6200ea;
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+    transition: box-shadow 0.2s, background 0.2s;
+}
+.style-material .demo-btn:hover {
+    background: #7c4dff;
+    box-shadow: 0 5px 5px -3px rgba(0,0,0,.2), 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12);
+}
+.style-material .demo-btn:active {
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 0 2px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.style-material .toggle-slider {
+    background-color: #cbd5e1;
+}
+.style-material .toggle-slider:before {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.style-material .demo-toggle input:checked + .toggle-slider {
+    background-color: rgba(98, 0, 234, 0.5);
+}
+.style-material .demo-toggle input:checked + .toggle-slider:before {
+    background-color: #6200ea;
+}
+
+.style-material .demo-input {
+    background: #f8fafc;
+    border: none;
+    border-bottom: 2px solid #94a3b8;
+    color: #0f172a;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+.style-material .demo-input:focus {
+    border-bottom-color: #6200ea;
+    background: #ffffff;
+}
+
+.style-material .demo-slider {
+    background: #cbd5e1;
+}
+.style-material .demo-slider::-webkit-slider-thumb {
+    background: #6200ea;
+    box-shadow: 0 2px 4px rgba(98, 0, 234, 0.4);
+}
+
+/* ==========================================================================
+   4. MINIMALIST (.style-minimalist)
+   ========================================================================== */
+.style-minimalist {
+    background-color: #ffffff;
+}
+
+.style-minimalist .demo-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #0f172a;
+    padding: 48px;
+}
+
+.style-minimalist .card-title {
+    color: #000000;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+}
+
+.style-minimalist .card-badge {
+    background: transparent;
+    color: #0f172a;
+    border: 1px solid #0f172a;
+    border-radius: 0px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.style-minimalist .card-desc {
+    color: #64748b;
+    font-weight: 300;
+}
+
+.style-minimalist .demo-btn {
+    background: #000000;
+    color: #ffffff;
+    border-radius: 0px;
+    border: 1px solid #000000;
+    font-weight: 400;
+    box-shadow: none;
+}
+.style-minimalist .demo-btn:hover {
+    background: #ffffff;
+    color: #000000;
+}
+
+.style-minimalist .toggle-slider {
+    background-color: #e2e8f0;
+    border-radius: 0px;
+}
+.style-minimalist .toggle-slider:before {
+    background-color: #000000;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.style-minimalist .demo-toggle input:checked + .toggle-slider {
+    background-color: #000000;
+}
+.style-minimalist .demo-toggle input:checked + .toggle-slider:before {
+    background-color: #ffffff;
+}
+
+.style-minimalist .demo-input {
+    background: transparent;
+    border: 1px solid #cbd5e1;
+    color: #000000;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.style-minimalist .demo-input:focus {
+    border-color: #000000;
+}
+
+.style-minimalist .demo-slider {
+    background: #e2e8f0;
+    border-radius: 0px;
+    height: 2px;
+}
+.style-minimalist .demo-slider::-webkit-slider-thumb {
+    background: #000000;
+    border-radius: 0px;
+    width: 16px;
+    height: 16px;
+}
+
+/* ==========================================================================
+   5. METRO / FLAT 2.0 (.style-metro)
+   ========================================================================== */
+.style-metro {
+    background-color: #111111;
+}
+
+.style-metro .demo-card {
+    background: #1f1f1f;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #ffffff;
+    border-left: 6px solid #0078d7;
+}
+
+.style-metro .card-title {
+    color: #ffffff;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.style-metro .card-badge {
+    background: #0078d7;
+    color: white;
+    border-radius: 0px;
+    font-weight: 700;
+}
+
+.style-metro .card-desc {
+    color: #cccccc;
+}
+
+.style-metro .demo-btn {
+    background: #0078d7;
+    color: white;
+    border-radius: 0px;
+    border: 2px solid transparent;
+    font-weight: 700;
+    box-shadow: none;
+    transition: transform 0.1s ease, border 0.2s ease;
+}
+.style-metro .demo-btn:hover {
+    border-color: #ffffff;
+    background: #005a9e;
+}
+.style-metro .demo-btn:active {
+    transform: scale(0.96);
+}
+
+.style-metro .toggle-slider {
+    background-color: #333333;
+    border-radius: 0px;
+    border: 2px solid #666666;
+}
+.style-metro .toggle-slider:before {
+    background-color: #ffffff;
+    border-radius: 0px;
+    height: 18px;
+    width: 18px;
+}
+.style-metro .demo-toggle input:checked + .toggle-slider {
+    background-color: #0078d7;
+    border-color: #0078d7;
+}
+
+.style-metro .demo-input {
+    background: #333333;
+    border: 2px solid #666666;
+    color: #ffffff;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.style-metro .demo-input:focus {
+    border-color: #0078d7;
+    background: #222222;
+}
+
+.style-metro .demo-slider {
+    background: #333333;
+    border-radius: 0px;
+    height: 10px;
+}
+.style-metro .demo-slider::-webkit-slider-thumb {
+    background: #0078d7;
+    border-radius: 0px;
+    width: 16px;
+    height: 24px;
+    border: 2px solid white;
+}
+
+/* ==========================================================================
+   6. SKEUOMINIMALISM (.style-skeuominimalism)
+   ========================================================================== */
+.style-skeuominimalism {
+    background-color: #f8fafc;
+}
+
+.style-skeuominimalism .demo-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+    border: 1px solid #cbd5e1;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05), inset 0 2px 4px rgba(255,255,255,0.8);
+    color: #0f172a;
+}
+
+.style-skeuominimalism .card-title {
+    color: #0f172a;
+    font-weight: 700;
+    text-shadow: 0 1px 1px #ffffff;
+}
+
+.style-skeuominimalism .card-badge {
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+    color: white;
+    border: 1px solid #0369a1;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(2,132,199,0.3), inset 0 1px 2px rgba(255,255,255,0.4);
+}
+
+.style-skeuominimalism .card-desc {
+    color: #64748b;
+}
+
+.style-skeuominimalism .widget-label {
+    color: #64748b;
+}
+
+.style-skeuominimalism .demo-btn {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    border: 1px solid #000000;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), inset 0 1px 1px rgba(255,255,255,0.2);
+}
+.style-skeuominimalism .demo-btn:hover {
+    background: linear-gradient(135deg, #1e293b, #334155);
+}
+.style-skeuominimalism .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-skeuominimalism .toggle-slider {
+    background: #e2e8f0;
+    border: 1px solid #cbd5e1;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+.style-skeuominimalism .toggle-slider:before {
+    background: linear-gradient(135deg, #ffffff, #e2e8f0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 1px 1px white;
+}
+.style-skeuominimalism .demo-toggle input:checked + .toggle-slider {
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+    border-color: #0284c7;
+}
+
+.style-skeuominimalism .demo-input {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #0f172a;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+.style-skeuominimalism .demo-input:focus {
+    border-color: #0284c7;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05), 0 0 0 3px rgba(2,132,199,0.15);
+}
+
+.style-skeuominimalism .demo-slider {
+    background: #e2e8f0;
+    border: 1px solid #cbd5e1;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+    border-radius: 6px;
+}
+.style-skeuominimalism .demo-slider::-webkit-slider-thumb {
+    background: linear-gradient(135deg, #ffffff, #e2e8f0);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2), inset 0 1px 1px white;
+    border-radius: 50%;
+}
+
+/* ==========================================================================
+   7. LINE ART (.style-lineart)
+   ========================================================================== */
+.style-lineart {
+    background-color: #ffffff;
+}
+
+.style-lineart .demo-card {
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #000000;
+}
+
+.style-lineart .card-title {
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.style-lineart .card-badge {
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: none;
+}
+
+.style-lineart .card-desc {
+    color: #4b5563;
+    font-weight: 400;
+}
+
+.style-lineart .widget-label {
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.style-lineart .demo-btn {
+    background: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: none;
+    transition: all 0.2s ease;
+}
+.style-lineart .demo-btn:hover {
+    background: #000000;
+    color: #ffffff;
+}
+.style-lineart .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-lineart .toggle-slider {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0px;
+}
+.style-lineart .toggle-slider:before {
+    background-color: #000000;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.style-lineart .demo-toggle input:checked + .toggle-slider {
+    background-color: #000000;
+}
+.style-lineart .demo-toggle input:checked + .toggle-slider:before {
+    background-color: #ffffff;
+}
+
+.style-lineart .demo-input {
+    background: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+    border-radius: 0px;
+    box-shadow: none;
+}
+.style-lineart .demo-input:focus {
+    border-color: #000000;
+    background: #f9fafb;
+}
+
+.style-lineart .demo-slider {
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0px;
+    height: 6px;
+}
+.style-lineart .demo-slider::-webkit-slider-thumb {
+    background: #000000;
+    border-radius: 0px;
+    width: 14px;
+    height: 20px;
+    box-shadow: none;
+}
+
+/* ==========================================================================
+   8. CORPORATE (.style-corporate)
+   ========================================================================== */
+.style-corporate {
+    background-color: #f8fafc;
+}
+
+.style-corporate .demo-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    color: #1e293b;
+}
+
+.style-corporate .card-title {
+    color: #0f172a;
+    font-weight: 700;
+    font-family: var(--font-sans);
+}
+
+.style-corporate .card-badge {
+    background: #e0f2fe;
+    color: #0284c7;
+    border: 1px solid #bae6fd;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 12px;
+    box-shadow: none;
+}
+
+.style-corporate .card-desc {
+    color: #64748b;
+    font-weight: 500;
+}
+
+.style-corporate .widget-label {
+    color: #64748b;
+    font-weight: 600;
+}
+
+.style-corporate .demo-btn {
+    background: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(2,132,199,0.2);
+}
+.style-corporate .demo-btn:hover {
+    background: #0369a1;
+}
+.style-corporate .demo-btn:active {
+    transform: scale(0.98);
+}
+
+.style-corporate .toggle-slider {
+    background-color: #cbd5e1;
+    border-radius: 100px;
+}
+.style-corporate .toggle-slider:before {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+.style-corporate .demo-toggle input:checked + .toggle-slider {
+    background-color: #0284c7;
+}
+
+.style-corporate .demo-input {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
+    border-radius: 6px;
+}
+.style-corporate .demo-input:focus {
+    border-color: #0284c7;
+    box-shadow: 0 0 0 3px rgba(2,132,199,0.15);
+}
+
+.style-corporate .demo-slider {
+    background: #cbd5e1;
+    height: 6px;
+    border-radius: 100px;
+}
+.style-corporate .demo-slider::-webkit-slider-thumb {
+    background: #0284c7;
+    box-shadow: 0 2px 4px rgba(2,132,199,0.3);
+}
+
